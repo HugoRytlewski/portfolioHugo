@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+  background-color: rgb(255, 255, 255);
+  background-image: url("~/assets/img/icon-green.svg");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Code pour les écrans larges */
+@media (min-width: 1024px) {
+  .swiper-slide:nth-child(1n) span {
+    font-family: 'Rajdhani', sans-serif;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #00de6f;
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Ajout de l'opacité initiale */
+  }
+
+  .swiper-slide:nth-child(1n):hover span {
+    opacity: 1;
+  }
+}
+
+/* Code pour les petits écrans et mobiles */
+@media (max-width: 1024px) {
+  .swiper-slide:nth-child(1n) span {
+    font-family: 'Rajdhani', sans-serif;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #00de6f;
+    opacity: 1; /* Ajout de l'opacité pour afficher l'élément */
+  }
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: rgb(255, 255, 255);
+  background-image: url("~/assets/img/tailwind.svg");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Code pour les écrans larges */
+@media (min-width: 1024px) {
+  .swiper-slide:nth-child(2n) span {
+    font-family: 'Rajdhani', sans-serif;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #0ab4da;
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Ajout de l'opacité initiale */
+  }
+
+  .swiper-slide:nth-child(2n):hover span {
+    opacity: 1;
+  }
+}
+
+/* Code pour les petits écrans et mobiles */
+@media (max-width: 1024px) {
+  .swiper-slide:nth-child(2n) span {
+    font-family: 'Rajdhani', sans-serif;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #0ab4da;
+    opacity: 1; /* Ajout de l'opacité pour afficher l'élément */
+  }
+}
+
+
+.swiper-slide:nth-child(3n) {
+  background-color: rgb(255, 255, 255);
+  background-image: url("~/assets/img/symfony.svg");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Code pour les écrans larges */
+@media (min-width: 1024px) {
+  .swiper-slide:nth-child(3n) span {
+    font-family: 'Rajdhani', sans-serif;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #070707;
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Ajout de l'opacité initiale */
+  }
+
+  .swiper-slide:nth-child(3n):hover span {
+    opacity: 1;
+  }
+}
+
+/* Code pour les petits écrans et mobiles */
+@media (max-width: 1024px) {
+  .swiper-slide:nth-child(3n) span {
+    font-family: 'Rajdhani', sans-serif;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #070707;
+    opacity: 1; /* Ajout de l'opacité pour afficher l'élément */
+  }
+}
+.swiper-slide:nth-child(4n) {
+  background-color: rgb(255, 255, 255);
+  background-image: url("~/assets/img/github.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Code pour les écrans larges */
+@media (min-width: 1024px) {
+  .swiper-slide:nth-child(4n) span {
+    font-family: 'Rajdhani', sans-serif;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #070707;
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Ajout de l'opacité initiale */
+  }
+
+  .swiper-slide:nth-child(4n):hover span {
+    opacity: 1;
+  }
+}
+
+/* Code pour les petits écrans et mobiles */
+@media (max-width: 1024px) {
+  .swiper-slide:nth-child(4n) span {
+    font-family: 'Rajdhani', sans-serif;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #070707;
+    opacity: 1; /* Ajout de l'opacité pour afficher l'élément */
+  }
+}
