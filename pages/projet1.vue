@@ -28,15 +28,15 @@ const ShowCss = ref(false);
           <h1 class="text-3xl text-red-500 ">Technologies</h1>
           <div class="gap-4 mt-5 flex flex-wrap justify-start md:justify-start md:mt-0">
             <div class="flex flex-col items-center">
-              <img @click="ShowCss=!ShowCss" class="w-10 h-10" src="~/assets/img/css.png" alt="css">
+              <img @click="ShowCss=!ShowCss" class="cursor-pointer w-10 h-10" src="~/assets/img/css.png" alt="css">
               <span v-if="ShowCss" class="text-white text-xl mt-2">CSS</span>
             </div>
             <div class="flex flex-col items-center">
-              <img @click="showHtml=!showHtml" class="w-10 h-10" src="~/assets/img/html.png" alt="html">
+              <img @click="showHtml=!showHtml" class="cursor-pointer w-10 h-10" src="~/assets/img/html.png" alt="html">
               <span v-if="showHtml" class="text-white text-xl mt-2">HTML</span>
             </div>
             <div class="flex flex-col items-center">
-              <img @click="showPhp=!showPhp" class="w-16 h-10" src="~/assets/img/php.png" alt="php">
+              <img @click="showPhp=!showPhp" class="cursor-pointer w-16 h-10" src="~/assets/img/php.png" alt="php">
               <span v-if="showPhp" class="text-white text-xl mt-2">PHP</span>
             </div>
           </div>

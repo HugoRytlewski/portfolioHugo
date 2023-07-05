@@ -18,7 +18,7 @@ const ShowSymfony = ref(false);
         <div class="mt-10 md:mt-28 w-3/5 border-b-2 pb-4 border-white">
           <h1 class="text-4xl text-blue-500">NEXTFEED</h1>
         </div>
-        <div class="mt-10 w-3/5 md:w-2/5 gap-8 md:flex">
+        <div class="mt-8 md:mt-10 w-3/5 gap-8 md:flex">
           <h1 class="text-3xl text-blue-500">Résumé</h1>
           <div>
             <span class="text-2xl text-white">Nextfeed est un projet de veille informatique, sur lequel j'ai travaillé pendant mon stage chez Nexton.</span>
@@ -28,19 +28,19 @@ const ShowSymfony = ref(false);
           <h1 class="text-3xl text-blue-500">Technologies</h1>
           <div class="gap-4 mt-5 flex flex-wrap justify-start md:justify-start md:mt-0">
             <div class="flex flex-col items-center">
-              <img @click="ShowCss=!ShowCss" class="w-10 h-10" src="~/assets/img/css.png" alt="css">
+              <img @click="ShowCss=!ShowCss" class="cursor-pointer w-10 h-10" src="~/assets/img/css.png" alt="css">
               <span v-if="ShowCss" class="text-white text-xl mt-2">CSS</span>
             </div>
             <div class="flex flex-col items-center">
-              <img @click="showHtml=!showHtml" class="w-10 h-10" src="~/assets/img/html.png" alt="html">
+              <img @click="showHtml=!showHtml" class="cursor-pointer w-10 h-10" src="~/assets/img/html.png" alt="html">
               <span v-if="showHtml" class="text-white text-xl mt-2">HTML</span>
             </div>
             <div class="flex flex-col items-center">
-              <img @click="showNuxt=!showNuxt" class="w-10 h-10" src="~/assets/img/icon-green.svg" alt="nuxt">
+              <img @click="showNuxt=!showNuxt" class="cursor-pointer w-10 h-10" src="~/assets/img/icon-green.svg" alt="nuxt">
               <span v-if="showNuxt" class="text-white text-xl mt-2">NUXT</span>
             </div>
-            <div class="flex flex-col items-center">
-              <img @click="ShowSymfony=!ShowSymfony" class="w-10 h-10" src="~/assets/img/symfony.svg" alt="symfony">
+            <div class="flex flex-col">
+              <img @click="ShowSymfony=!ShowSymfony" class="ml-1.5 cursor-pointer w-10 h-10" src="~/assets/img/symfony.svg" alt="symfony">
               <span v-if="ShowSymfony" class="text-white text-xl mt-2">SYMFONY</span>
             </div>
           </div>

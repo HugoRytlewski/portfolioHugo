@@ -67,10 +67,11 @@ window.scrollTo({
       Mon objectif serait de devenir un développeur full stack<span class="cursor5">_</span>
     </p>
   </div>
+  
 </div>
-
   </div>
   </div>
+  
   <div
     class="scroll-container"
     id="competence"
@@ -131,7 +132,7 @@ window.scrollTo({
   <div class="flex flex-wrap justify-center text-center mt-10 text-black text-lg font-medium ">
     <div class="p-4"> 
      <nuxt-link to="/projet1">
-      <div class=" flex rounded-lg h-full p-20 bg-white flex-col overpadding   hover:ring-4 ring-green-400 md:p-28">
+      <div class=" flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-75   hover:ring-4 ring-green-400 md:p-28">
         <div class="flex flex-col justify-between flex-grow">
           <img class="w-20 h-15" src="~/assets/img/logo.png" alt="resto">
         </div>
@@ -146,7 +147,7 @@ window.scrollTo({
 
     <div class="p-4">
       <nuxt-link to="/projet2">
-        <div class=" flex rounded-lg h-full p-20 bg-white flex-col overpadding   hover:ring-4 ring-green-400 md:p-28">
+        <div class=" flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-75   hover:ring-4 ring-green-400 md:p-28">
         <div class="flex flex-col justify-between flex-grow">
           <img
             class="w-20 h-15"
@@ -169,6 +170,7 @@ window.scrollTo({
     class="scroll-contact"
   >
   </div>
+  
 
   <div 
     class="mt-36  md:mt-60"
@@ -178,6 +180,7 @@ window.scrollTo({
     >
       $ Contact
     </h1>
+    
     <section class="">
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -225,14 +228,7 @@ window.scrollTo({
 
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-.overpadding {
-  
-  transition: all 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-  &:hover {
-    transform: scale(1.02);
-  }
 
-}
 .scroll-container {
   scroll-margin-top: 120px; /* Remplacez la valeur par l'offset souhaité */
 }

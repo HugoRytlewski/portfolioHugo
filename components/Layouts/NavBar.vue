@@ -1,5 +1,5 @@
 <template>
-  <ul class="fixed w-screen block flex justify-between bg-black h text-white z-40 text text-lg top-0 item-center drop-shadown-md p-7">
+  <ul class="fixed w-screen block flex justify-between bg-neutral-950 h text-white z-40 text text-lg top-0 item-center drop-shadown-md p-7">
     <li>
       <NuxtLink to="/accueil#propos">
         <button class="flex items-center justify-center ml-4 ">
@@ -47,7 +47,7 @@
     <Transition>
       <div
         v-if="isShowDropdown"
-        class=" bg-black fixed mt-10 h-screen w-screen  flex-col items-center rounded right-0 p-6 flex  justify-start gap-y-5 "
+        class=" bg-neutral-950 fixed mt-10 h-screen w-screen  flex-col items-center rounded right-0 p-6 flex  justify-start gap-y-5 "
       >
         <li>
           <button>

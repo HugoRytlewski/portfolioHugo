@@ -1,5 +1,5 @@
 <template> 
-    <footer class="bg-neutral-900	 rounded-lg m-4 ">
+    <footer class="bg-neutral-900 rounded-lg m-4 ">
         <div class="w-screen-xl items-center p-4 flex flex-col md:flex-row md:justify-between">
             <span class="text-md text-white sm:text-center ">© 2023 
                 <a class="hover:underline">Portfolio Hugo, Tous droits réservés</a>
