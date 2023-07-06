@@ -187,7 +187,7 @@ window.scrollTo({
       <form action="https://formsubmit.co/hugorytlewski10@gmail.com" method="post" class=" md:space-y-8">
         <div>
           <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://portfolio2-0-ahzi92vkh-hugorytlewski.vercel.app/accueil#contact">
+          <input type="hidden" name="_next" value="https://portfolio2-0-sand.vercel.app/accueil#contact">
 
 
           <label for="email" class="block mb-2 text-2xl text-white">Mail</label>
