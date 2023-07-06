@@ -1,7 +1,13 @@
 <script setup lang="ts">
 import NavbarProjet from '../components/Layouts/NavBarProjet.vue';
 import Footer from '../components/Layouts/Footer.vue';
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'
 
+// initialize components based on data attribute selectors
+onMounted(() => {
+    initFlowbite();
+})
 const showHtml = ref(false);
 const showPhp = ref(false);
 const ShowCss = ref(false);
@@ -28,24 +34,55 @@ const ShowCss = ref(false);
           <h1 class="text-3xl text-red-500 ">Technologies</h1>
           <div class="gap-4 mt-5 flex flex-wrap justify-start md:justify-start md:mt-0">
             <div class="flex flex-col items-center">
-              <img @click="ShowCss=!ShowCss" class="w-10 h-10" src="~/assets/img/css.png" alt="css">
+              <img @click="ShowCss=!ShowCss" class="cursor-pointer w-10 h-10" src="~/assets/img/css.png" alt="css">
               <span v-if="ShowCss" class="text-white text-xl mt-2">CSS</span>
             </div>
             <div class="flex flex-col items-center">
-              <img @click="showHtml=!showHtml" class="w-10 h-10" src="~/assets/img/html.png" alt="html">
+              <img @click="showHtml=!showHtml" class="cursor-pointer w-10 h-10" src="~/assets/img/html.png" alt="html">
               <span v-if="showHtml" class="text-white text-xl mt-2">HTML</span>
             </div>
             <div class="flex flex-col items-center">
-              <img @click="showPhp=!showPhp" class="w-16 h-10" src="~/assets/img/php.png" alt="php">
+              <img @click="showPhp=!showPhp" class="cursor-pointer w-16 h-10" src="~/assets/img/php.png" alt="php">
               <span v-if="showPhp" class="text-white text-xl mt-2">PHP</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="mt-16" >
+    <div class="mt-16 ml-4 mr-4 md:ml-0 md:mr-0 ">
+  
 
+  <div id="controls-carousel" class="relative w-full" data-carousel="static">
+<div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="~/assets/img/resto.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
     </div>
+    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+        <img src="~/assets/img/test.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+    </div>
+   
+</div>
+<div class="flex justify-center items-center pt-4">
+    <button type="button" class="flex justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="text-gray-400 hover:text-white group-focus:text-white ">
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+            </svg>
+        </span>
+    </button>
+    <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="text-gray-400 hover:text-white group-focus:text-white ">
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </span>
+    </button>
+</div>
+</div>
+
+
+</div>
+
     <Footer />
   </div>
 </template>

@@ -47,7 +47,7 @@
     <Transition>
       <div
         v-if="isShowDropdown"
-        class="  fixed mt-10 h-screen w-screen bg-neutral-950	  flex-col items-center rounded right-0 p-6 flex  justify-start gap-y-5 "
+        class="  fixed mt-10 h-screen w-screen couleur-bg	  flex-col items-center rounded right-0 p-6 flex  justify-start gap-y-5 "
       >
         <li>
           <button>
@@ -199,9 +199,13 @@ export default {
 html {
   scroll-behavior: smooth;
 }
+.couleur-bg{
+  background-color: #0d0d0d;
 
 
-.h{
+}
+
+.h{ 
 
   box-shadow: 0 2px 2px 1px rgba(128, 127, 127, 0.2);
 
