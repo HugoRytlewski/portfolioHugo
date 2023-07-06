@@ -53,7 +53,11 @@ const ShowSymfony = ref(false);
         </div>
       </div>
     </div>
-    <div class="mt-16 ml-4 mr-4 md:ml-0 md:mr-0 ">
+    <div>
+
+      
+    </div>
+    <div class="mt-20 ml-4 mr-4 md:ml-0 md:mr-0 ">
   
 
   <div id="controls-carousel" class="relative w-full" data-carousel="static">
@@ -64,7 +68,6 @@ const ShowSymfony = ref(false);
     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
         <img src="~/assets/img/nextfeed2.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
     </div>
-   
 </div>
 <div class="flex justify-center items-center pt-4">
     <button type="button" class="flex justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
