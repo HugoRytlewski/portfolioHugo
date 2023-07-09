@@ -34,15 +34,15 @@ const ShowCss = ref(false);
           <h1 class="text-3xl text-red-500">Mission(s)</h1>
           <div class="flex flex-col mt-4 md:mt-0">
 
-            <span class="text-2xl text-white text-center">- Ajout de la fonctionnalité "Ajout aux favoris". </span>
+            <span class="text-2xl text-white text-center">Ajout de la fonctionnalité "Espace de recherche".</span>
             <br>
-            <span class="text-2xl text-white text-center">- Ajout de la fonctionnalité "Espace de recherche".</span>
+            <span class="text-2xl text-white text-center">Ajout de la fonctionnalité "Ajout aux favoris". </span>
           </div>
           <br>
           <div class="flex flex-col">
-          <span class="text-2xl text-white text-center">- Ajout de la fonctionnalité "Commentaires". </span>
+          <span class="text-2xl text-white text-center">Ajout de la fonctionnalité "Commentaires". </span>
           <br>
-          <span class="text-2xl text-white text-center">- Ajout de la fonctionnalité "Connexion".</span>
+          <span class="text-2xl text-white text-center">Ajout de la fonctionnalité "Connexion".</span>
         </div>
         </div>
         <div class="h-16 mt-8 md:mt-10 w-3/5 gap-10 md:flex ">
