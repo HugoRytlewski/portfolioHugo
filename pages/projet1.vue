@@ -30,6 +30,21 @@ const ShowCss = ref(false);
             <span class="text-2xl text-white">Resto.fr est un projet de référencement de restaurants. C'est un projet sur lequel j'ai travaillé pendant mon BTS SIO.</span>
           </div>
         </div>
+            <div class="mt-8 md:mt-10 w-3/5 gap-8 md:flex">
+          <h1 class="text-3xl text-red-500">Mission(s)</h1>
+          <div >
+            <span class="text-2xl text-white">- Ajout de la fonctionnalité "Ajout aux favoris. </span>
+            <br>
+            <span class="text-2xl text-white">- Ajout de la fonctionnalité "Espace de recherche".</span>
+
+          </div>
+          <div >
+
+          <span class="text-2xl text-white">- Ajout de la fonctionnalité "Commentaires". </span>
+          <br>
+          <span class="text-2xl text-white">- Ajout de la fonctionnalité "Connexion".</span>
+        </div>
+        </div>
         <div class="h-16 mt-8 md:mt-10 w-3/5 gap-10 md:flex ">
           <h1 class="text-3xl text-red-500 ">Technologies</h1>
           <div class="gap-4 mt-5 flex flex-wrap justify-start md:justify-start md:mt-0">

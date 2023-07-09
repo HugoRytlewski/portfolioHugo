@@ -30,6 +30,18 @@ const ShowSymfony = ref(false);
             <span class="text-2xl text-white">Nextfeed est un projet de veille informatique, sur lequel j'ai travaillé pendant mon stage chez Nexton.</span>
           </div>
         </div>
+        <div class="mt-8 md:mt-10 w-3/5 gap-8 md:flex">
+          <h1 class="text-3xl text-blue-500">Mission(s)</h1>
+          <div >
+            <span class="text-2xl text-white">- Ajout de la gestion des flux RSS préférés par l'utilisateur : Cette fonctionnalité permet à l'utilisateur de sélectionner et de gérer ses flux RSS préférés. </span>
+
+          </div>
+          <div >
+
+          <span class="text-2xl text-white">- Ajout de la connexion avec Google : Cette fonctionnalité permet à l'utilisateur de se connecter à votre application ou système en utilisant son compte Google. </span>
+        </div>
+
+        </div>
         <div class="h-16 mt-8 md:mt-10 w-3/5 gap-10 md:flex ">
           <h1 class="text-3xl text-blue-500">Technologies</h1>
           <div class="gap-4 mt-5 flex flex-wrap justify-start md:justify-start md:mt-0">
@@ -58,35 +70,32 @@ const ShowSymfony = ref(false);
       
     </div>
     <div class="mt-20 ml-4 mr-4 md:ml-0 md:mr-0 ">
-  
-
-  <div id="controls-carousel" class="relative w-full" data-carousel="static">
-<div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="~/assets/img/nextfeed.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-    </div>
-    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-        <img src="~/assets/img/nextfeed2.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-    </div>
-</div>
-<div class="flex justify-center items-center pt-4">
-    <button type="button" class="flex justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="text-gray-400 hover:text-white group-focus:text-white ">
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+      <div id="controls-carousel" class="relative w-full" data-carousel="static">
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="~/assets/img/nextfeed.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src="~/assets/img/nextfeed2.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          </div>
+        </div>
+        <div class="flex justify-center items-center pt-4">
+          <button type="button" class="flex justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="text-gray-400 hover:text-white group-focus:text-white ">
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
-            </svg>
-        </span>
-    </button>
-    <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
-      <span class="text-gray-400 hover:text-white group-focus:text-white ">
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              </svg>
+            </span>
+          </button>
+          <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="text-gray-400 hover:text-white group-focus:text-white ">
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </span>
-    </button>
-</div>
-</div>
-
+             </svg>
+            </span>
+          </button>
+        </div>
+      </div>
 
     </div>
     <Footer />
