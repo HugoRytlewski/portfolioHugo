@@ -38,8 +38,7 @@ const ShowCss = ref(false);
             <span class="text-2xl text-white">- Ajout de la fonctionnalité "Espace de recherche".</span>
 
           </div>
-          <div >
-
+          <div class="flex flex-col">
           <span class="text-2xl text-white">- Ajout de la fonctionnalité "Commentaires". </span>
           <br>
           <span class="text-2xl text-white">- Ajout de la fonctionnalité "Connexion".</span>
