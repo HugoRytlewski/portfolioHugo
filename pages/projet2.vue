@@ -32,8 +32,7 @@ const ShowSymfony = ref(false);
         </div>
         <div class="mt-8 md:mt-10 w-3/5 gap-8 md:flex">
           <h1 class="text-3xl text-blue-500">Mission(s)</h1>
-          <div class="flex flex-col">
-            <br>
+          <div class="flex flex-col mt-4 md:mt-0">
             <span class="text-2xl text-white">- Ajout de la gestion des flux RSS préférés par l'utilisateur : Cette fonctionnalité permet à l'utilisateur de sélectionner et de gérer ses flux RSS préférés. </span>
 
           </div>
