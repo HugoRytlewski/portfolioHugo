@@ -36,8 +36,8 @@ const ShowCss = ref(false);
             <span class="text-2xl text-white">- Ajout de la fonctionnalité "Ajout aux favoris". </span>
             <br>
             <span class="text-2xl text-white">- Ajout de la fonctionnalité "Espace de recherche".</span>
-
           </div>
+          <br>
           <div class="flex flex-col">
           <span class="text-2xl text-white">- Ajout de la fonctionnalité "Commentaires". </span>
           <br>

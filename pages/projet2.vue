@@ -40,7 +40,7 @@ const ShowSymfony = ref(false);
 
           <span class="text-2xl text-white">- Ajout de la connexion avec Google : Cette fonctionnalité permet à l'utilisateur de se connecter à votre application ou système en utilisant son compte Google. </span>
         </div>
-
+        <br>
         </div>
         <div class="h-16 mt-8 md:mt-10 w-3/5 gap-10 md:flex ">
           <h1 class="text-3xl text-blue-500">Technologies</h1>
