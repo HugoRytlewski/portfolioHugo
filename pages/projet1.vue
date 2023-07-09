@@ -32,13 +32,12 @@ const ShowCss = ref(false);
         </div>
             <div class="mt-8 md:mt-10 w-3/5 gap-8 md:flex">
           <h1 class="text-3xl text-red-500">Mission(s)</h1>
-          <div >
+          <div class="flex flex-col">
             <span class="text-2xl text-white">- Ajout de la fonctionnalité "Ajout aux favoris". </span>
             <br>
             <span class="text-2xl text-white">- Ajout de la fonctionnalité "Espace de recherche".</span>
 
           </div>
-          <br>
           <div >
 
           <span class="text-2xl text-white">- Ajout de la fonctionnalité "Commentaires". </span>

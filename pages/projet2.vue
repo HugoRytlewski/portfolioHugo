@@ -32,11 +32,10 @@ const ShowSymfony = ref(false);
         </div>
         <div class="mt-8 md:mt-10 w-3/5 gap-8 md:flex">
           <h1 class="text-3xl text-blue-500">Mission(s)</h1>
-          <div >
+          <div class="flex flex-col">
             <span class="text-2xl text-white">- Ajout de la gestion des flux RSS préférés par l'utilisateur : Cette fonctionnalité permet à l'utilisateur de sélectionner et de gérer ses flux RSS préférés. </span>
 
           </div>
-          <br>
           <div >
 
           <span class="text-2xl text-white">- Ajout de la connexion avec Google : Cette fonctionnalité permet à l'utilisateur de se connecter à votre application ou système en utilisant son compte Google. </span>
