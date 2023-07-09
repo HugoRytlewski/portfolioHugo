@@ -34,9 +34,9 @@ const ShowCss = ref(false);
           <h1 class="text-3xl text-red-500">Mission(s)</h1>
           <div class="flex flex-col mt-4 md:mt-0">
 
-            <span class="text-2xl text-white">- Ajout de la fonctionnalité "Ajout aux favoris". </span>
+            <span class="text-2xl text-white text-center">- Ajout de la fonctionnalité "Ajout aux favoris". </span>
             <br>
-            <span class="text-2xl text-white">- Ajout de la fonctionnalité "Espace de recherche".</span>
+            <span class="text-2xl text-white text-center">- Ajout de la fonctionnalité "Espace de recherche".</span>
           </div>
           <br>
           <div class="flex flex-col">
