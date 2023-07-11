@@ -165,7 +165,7 @@ $ Mes Compétences_
   <div class="flex flex-wrap justify-center text-center mt-16 md:mt-20 text-black text-lg font-medium ">
     <div class="p-4"> 
      <nuxt-link to="/projet1">
-      <div class=" flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-75   hover:-translate-y-1 hover:scale-105  hover:ring-4 ring-green-400 md:p-28">
+      <div class=" flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-75   md:hover:-translate-y-1 md:hover:scale-105  hover:ring-4 ring-green-400 md:p-28">
         <div class="flex flex-col justify-between flex-grow">
           <img class="w-20 h-15" src="~/assets/img/logo.png" alt="resto">
         </div>
@@ -180,7 +180,7 @@ $ Mes Compétences_
 
     <div class="p-4">
       <nuxt-link to="/projet2">
-        <div class=" flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-75   hover:-translate-y-1 hover:scale-105  hover:ring-4 ring-green-400 md:p-28">
+        <div class=" flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-75   md:hover:-translate-y-1 md:hover:scale-105  hover:ring-4 ring-green-400 md:p-28">
         <div class="flex flex-col justify-between flex-grow">
           <img
             class="w-20 h-15"
