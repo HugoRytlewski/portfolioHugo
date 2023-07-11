@@ -29,10 +29,11 @@ window.scrollTo({
 </script>
 
 <template>
-  <Transition>
+  <Transition >
     <Navbar v-if="y>80" />
     <Navbar2 v-else />
   </Transition>
+
   <div
     class="scroll-container mt-16"
     id="propos"
@@ -45,7 +46,7 @@ window.scrollTo({
   >
   <div>
 
-    <div class="  responsive flex justify-center overflow-hidden h-screen items-center sm:ml-16">
+    <div class=" responsive flex justify-center overflow-hidden h-screen items-center sm:ml-16">
   <div class="text-center h-screen rounded-b-lg flex-col items-center  test overflow-hidden ">
 
     <p class="w-0 overflow-auto text-left text-2xl text-cyan-400 line1 whitespace-pre-line sm:text-3xl">
@@ -78,11 +79,28 @@ window.scrollTo({
   >
   </div>
   <div>
+    <div class="h-1">
+      <Transition   name="fade">
+
     <h1
-      class=" teest flex justify-center text-green-400  text-4xl md:text-6xl"
+      v-if="y>500"
+      class="hidden teest md:flex justify-center text-green-400  text-4xl md:text-6xl"
     >
       $ Mes Compétences_
     </h1>
+  </Transition>
+  <Transition   name="fade">
+
+<h1
+  v-if="y>300"
+  class=" teest md:hidden flex justify-center text-green-400  text-4xl md:text-6xl"
+>
+$ Mes Compétences_
+
+</h1>
+</Transition>
+</div>
+
     <swiper
       :effect="'cards'"
       :grab-cursor="true"
@@ -122,14 +140,29 @@ window.scrollTo({
   class="mt-36  md:mt-60"
     ref="test"
   >
+  
+<div class="h-1">
+      <Transition   name="fade">
     <h1
-      class=" teest flex justify-center text-green-400 text-4xl md:text-6xl"
-      
+      v-if="y>1200"
+      class="hidden teest md:flex justify-center text-green-400  text-4xl md:text-6xl"
     >
       $ Mes projets_
     </h1>
+  </Transition>
+  <Transition   name="fade">
+
+<h1
+  v-if="y>900"
+  class=" teest md:hidden flex justify-center text-green-400  text-4xl md:text-6xl"
+>
+  $ Mes projets_
+
+</h1>
+</Transition>
+</div>
   </div>
-  <div class="flex flex-wrap justify-center text-center mt-10 text-black text-lg font-medium ">
+  <div class="flex flex-wrap justify-center text-center mt-16 md:mt-20 text-black text-lg font-medium ">
     <div class="p-4"> 
      <nuxt-link to="/projet1">
       <div class=" flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-75   hover:ring-4 ring-green-400 md:p-28">
@@ -175,11 +208,28 @@ window.scrollTo({
   <div 
     class="mt-36  md:mt-60"
   >
+     <div class="h-1">
+      <Transition   name="fade">
+
     <h1
-      class=" teest flex justify-center text-green-400 text-4xl md:text-6xl"
+      v-if="y>1900"
+      class="hidden teest md:flex justify-center text-green-400  text-4xl md:text-6xl"
     >
       $ Contact
+
     </h1>
+  </Transition>
+  <Transition   name="fade">
+
+<h1
+  v-if="y>1700"
+  class=" teest md:hidden flex justify-center text-green-400  text-4xl md:text-6xl"
+>
+  $ Contact
+
+</h1>
+</Transition>
+</div>
     
     <section class="">
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -228,12 +278,22 @@ window.scrollTo({
 
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s ease;
+}
 
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 100;
+  transform: translateX(-50%);
+  opacity: 0;
+}
 .scroll-container {
-  scroll-margin-top: 120px; /* Remplacez la valeur par l'offset souhaité */
+  scroll-margin-top: 170px; /* Remplacez la valeur par l'offset souhaité */
 }
 .scroll-contact {
-  scroll-margin-top: -75px; /* Remplacez la valeur par l'offset souhaité */
+  scroll-margin-top: -40px; /* Remplacez la valeur par l'offset souhaité */
 }
 
 .v-enter-active,
