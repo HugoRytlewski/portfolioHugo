@@ -44,22 +44,32 @@ const ShowSymfony = ref(false);
         </div>
         <div class="h-16 mt-8 md:mt-10 w-3/5 gap-10 md:flex ">
           <h1 class="text-3xl text-blue-500">Technologies</h1>
-          <div class="gap-4 mt-5 flex flex-wrap justify-start md:justify-start md:mt-0">
+          <div class="gap-4  mt-5 flex flex-wrap justify-start md:justify-start md:mt-0">
             <div class="flex flex-col items-center">
               <img @click="ShowCss=!ShowCss" class="cursor-pointer w-10 h-10" src="~/assets/img/css.png" alt="css">
-              <span v-if="ShowCss" class="text-white text-xl mt-2">CSS</span>
+              <Transition>            
+                <span v-if="ShowCss" class="text-white text-xl mt-2">CSS</span>
+             </Transition>            
+
             </div>
             <div class="flex flex-col items-center">
               <img @click="showHtml=!showHtml" class="cursor-pointer w-10 h-10" src="~/assets/img/html.png" alt="html">
-              <span v-if="showHtml" class="text-white text-xl mt-2">HTML</span>
-            </div>
+              <Transition>
+                <span v-if="showHtml" class="text-white text-xl mt-2">HTML</span>
+              </Transition>            </div>
             <div class="flex flex-col items-center">
               <img @click="showNuxt=!showNuxt" class="cursor-pointer w-10 h-10" src="~/assets/img/icon-green.svg" alt="nuxt">
-              <span v-if="showNuxt" class="text-white text-xl mt-2">NUXT</span>
-            </div>
+              <Transition>
+                <span v-if="showNuxt" class="text-white text-xl mt-2">NUXT</span>
+              </Transition>            
+              </div>
             <div class="flex flex-col">
               <img @click="ShowSymfony=!ShowSymfony" class="ml-1.5 cursor-pointer w-10 h-10" src="~/assets/img/symfony.svg" alt="symfony">
-              <span v-if="ShowSymfony" class="text-white text-xl mt-2">SYMFONY</span>
+              <Transition>
+                <span v-if="ShowSymfony" class="text-white text-xl mt-2">SYMFONY</span>
+              </Transition>            
+            </div>
+
             </div>
           </div>
         </div>
@@ -69,7 +79,7 @@ const ShowSymfony = ref(false);
 
       
     </div>
-    <div class="mt-20 ml-4 mr-4 md:ml-0 md:mr-0 ">
+    <div class=" ml-4 mr-4 md:ml-0 md:mr-0 ">
       <div id="controls-carousel" class="relative w-full" data-carousel="static">
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
@@ -99,12 +109,20 @@ const ShowSymfony = ref(false);
 
     </div>
     <Footer />
-  </div>
 </template>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+.v-enter-active,
+.v-leave-active {
+  transition: all 0.5s ease;
+}
 
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+  transform: translateY(-100%);
+}
 h1 {
   font-family: 'VT323', monospace;
 }

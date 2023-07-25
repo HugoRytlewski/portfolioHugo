@@ -50,15 +50,23 @@ const ShowCss = ref(false);
           <div class="gap-4 mt-5 flex flex-wrap justify-start md:justify-start md:mt-0">
             <div class="flex flex-col items-center">
               <img @click="ShowCss=!ShowCss" class="cursor-pointer w-10 h-10" src="~/assets/img/css.png" alt="css">
-              <span v-if="ShowCss" class="text-white text-xl mt-2">CSS</span>
+              <Transition>
+                <span v-if="ShowCss" class="text-white text-xl mt-2">CSS</span>
+              </Transition>
             </div>
             <div class="flex flex-col items-center">
               <img @click="showHtml=!showHtml" class="cursor-pointer w-10 h-10" src="~/assets/img/html.png" alt="html">
-              <span v-if="showHtml" class="text-white text-xl mt-2">HTML</span>
+              <Transition>
+                <span v-if="showHtml" class="text-white text-xl mt-2">HTML</span>
+              </Transition>
+
             </div>
             <div class="flex flex-col items-center">
               <img @click="showPhp=!showPhp" class="cursor-pointer w-16 h-10" src="~/assets/img/php.png" alt="php">
-              <span v-if="showPhp" class="text-white text-xl mt-2">PHP</span>
+              <Transition>
+                <span v-if="showPhp" class="text-white text-xl mt-2">PHP</span>
+              </Transition>
+
             </div>
           </div>
         </div>
@@ -104,7 +112,16 @@ const ShowCss = ref(false);
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+.v-enter-active,
+.v-leave-active {
+  transition: all 0.5s ease;
+}
 
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+  transform: translateY(-100%);
+}
 h1 {
   font-family: 'VT323', monospace;
 }
