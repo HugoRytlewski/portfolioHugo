@@ -33,13 +33,13 @@ const ShowSymfony = ref(false);
         <div class="mt-8 md:mt-10 w-3/5 gap-8 md:flex">
           <h1 class="text-3xl text-blue-500">Mission(s)</h1>
           <div class="flex flex-col mt-4 md:mt-0">
-            <span class="text-2xl text-white text-center">Ajout de la gestion des flux RSS préférés par l'utilisateur : Cette fonctionnalité permet à l'utilisateur de sélectionner et de gérer ses flux RSS préférés. </span>
+            <span class="text-2xl text-white ">Ajout de la gestion des flux RSS préférés par l'utilisateur : Cette fonctionnalité permet à l'utilisateur de sélectionner et de gérer ses flux RSS préférés. </span>
 
           </div>
           <br>
           <div class="flex flex-col">
 
-          <span class="text-2xl text-white text-center">Ajout de la connexion avec Google : Cette fonctionnalité permet à l'utilisateur de se connecter à votre application ou système en utilisant son compte Google. </span>
+          <span class="text-2xl text-white text-left md:text-center">Ajout de la connexion avec Google : Cette fonctionnalité permet à l'utilisateur de se connecter à votre application ou système en utilisant son compte Google. </span>
         </div>
         </div>
         <div class="h-16 mt-8 md:mt-10 w-3/5 gap-10 md:flex ">
@@ -79,7 +79,7 @@ const ShowSymfony = ref(false);
 
       
     </div>
-    <div class=" ml-4 mr-4 md:ml-0 md:mr-0 ">
+    <div class="mt-24  xl:mt-10 ml-4 mr-4 md:ml-0 md:mr-0 ">
       <div id="controls-carousel" class="relative w-full" data-carousel="static">
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
