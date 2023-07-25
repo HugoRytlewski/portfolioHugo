@@ -304,7 +304,7 @@ $ Mes Compétences_
 .v-enter-from,
 .v-leave-to {
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateY(-100%);
 }
 html {
   scroll-behavior: smooth;
