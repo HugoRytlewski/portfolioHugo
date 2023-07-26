@@ -60,6 +60,8 @@ export default {
 
 </script>
 <template>
+      <title>Chargement...</title>
+
   <div class="ml-8 mr-8 flex flex-col items-center justify-center min-h-screen  gap-16">
     <div class="w-11/12 sm:w-9/12 md:w-8/12 lg:w-6/12 xl:w-4/12">
 <div class="flex justify-between mb-1">
