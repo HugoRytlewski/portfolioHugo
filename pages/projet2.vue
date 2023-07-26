@@ -15,6 +15,8 @@ const ShowSymfony = ref(false);
 </script>
 
 <template>
+    <title>Projet NEXTFEED</title>
+
   <div class="flex flex-col min-h-screen">
     <NavbarProjet />
 

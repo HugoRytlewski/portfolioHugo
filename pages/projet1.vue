@@ -14,7 +14,7 @@ const ShowCss = ref(false);
 
 </script>
 <template>
-  <title>Portfolio Hugo</title>
+  <title>Projet RESTO.FR</title>
 
   <div class="flex flex-col min-h-screen">
     <NavbarProjet />

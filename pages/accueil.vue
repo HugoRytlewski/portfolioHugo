@@ -29,6 +29,7 @@ window.scrollTo({
 </script>
 
 <template>
+  <title>Portfolio Hugo</title>
   <Transition >
     <Navbar v-if="y>80" />
     <Navbar2 v-else />
