@@ -286,8 +286,9 @@ $ Mes Compétences_
 	  font-size: 1.875rem; /* 30px */
     line-height: 2.25rem; /* 36px */
 }
+
 @media (max-width: 576px) {
-  .text {
+  .apropos {
     font-size: 24px; /* Taille de texte "3xl" pour les écrans small */
   }
 }
