@@ -53,22 +53,22 @@ window.scrollTo({
     <div class="  responsive flex justify-center  h-screen items-center sm:ml-16">
       <div class="text-center h-screen rounded-b-lg flex-col items-center  test  ">
 
-    <p class="w-0 overflow-auto text-left  text-cyan-400 line1 whitespace-pre-line apropos">
+    <p class="w-0 overflow-auto text-left text-2xl text-cyan-400 line1 whitespace-pre-line sm:text-3xl">
       $ Bonjour, <span class="cursor1">_</span>
     </p>
-    <p class="w-0 overflow-auto text-left  text-green-400 line2 whitespace-normal apropos">
+    <p class="w-0 overflow-auto text-left text-2xl text-green-400 line2 whitespace-normal sm:text-3xl">
       Je m'appelle Hugo Rytlewski et j'ai 18 ans.<span class="cursor2">_</span>
     </p>
     <br>
-    <p class="w-0 overflow-auto text-left  text-rose-600 line3 whitespace-normal apropos ">
+    <p class="w-0 overflow-auto text-left text-2xl text-rose-600 line3 whitespace-normal sm:text-3xl">
       Passionné par l'informatique je me suis orienté vers le BTS SIO au lycée Suzanne Valadon, je suis actuellement en première année<span class="cursor3">_</span>
     </p>
     <br>
-    <p class="w-0 overflow-auto text-left text-2xl text-white line4 whitespace-normal apropos ">
+    <p class="w-0 overflow-auto text-left text-2xl text-white line4 whitespace-normal sm:text-3xl">
       Je voudrais poursuivre mes études en licence pro en alternance afin d'obtenir de l'expérience dans le monde du travail et une certaine maîtrise du développement web<span class="cursor4">_</span>
     </p>
     <br>
-    <p class="w-0 overflow-auto text-left text-2xl text-green-400 line5 whitespace-normal apropos">
+    <p class="w-0 overflow-auto text-left text-2xl text-green-400 line5 whitespace-normal sm:text-3xl">
       Mon objectif serait de devenir un développeur full stack<span class="cursor5">_</span>
     </p>
   </div>
@@ -282,26 +282,7 @@ $ Mes Compétences_
 
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-.apropos {
-	  font-size: 1.875rem; /* 30px */
-    line-height: 2.25rem; /* 36px */
-}
 
-@media (min-width: 576px) {
-  .apropos {
-    font-size: 24px; /* Taille de texte "3xl" pour les écrans small */
-  }
-}
-
-@media (min-width: 280px) and (min-height: 653px) {
-  .apropos {
-    line-height: 2rem; 
-    font-size: 1rem; 
-
-
-
-  }
-}
 
 .fade-enter-active,
 .fade-leave-active {
