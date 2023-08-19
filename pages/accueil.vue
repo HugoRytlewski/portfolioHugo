@@ -287,15 +287,15 @@ $ Mes Compétences_
     line-height: 2.25rem; /* 36px */
 }
 
-@media (max-width: 576px) {
+@media (min-width: 576px) {
   .apropos {
     font-size: 24px; /* Taille de texte "3xl" pour les écrans small */
   }
 }
 
-@media (max-width: 280px) and (max-height: 653px) {
+@media (min-width: 280px) and (min-height: 653px) {
   .apropos {
-    line-height: 2.25rem; 
+    line-height: 2rem; 
     font-size: 1rem; 
 
 
