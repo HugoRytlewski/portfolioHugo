@@ -50,8 +50,8 @@ window.scrollTo({
   >
   <div>
 
-    <div class=" responsive flex justify-center overflow-hidden h-screen items-center sm:ml-16">
-  <div class="text-center h-screen rounded-b-lg flex-col items-center  test overflow-hidden ">
+    <div class="  responsive flex justify-center  h-screen items-center sm:ml-16">
+      <div class="text-center h-screen rounded-b-lg flex-col items-center  test  ">
 
     <p class="w-0 overflow-auto text-left text-2xl text-cyan-400 line1 whitespace-pre-line sm:text-3xl">
       $ Bonjour, <span class="cursor1">_</span>
