@@ -53,14 +53,14 @@ window.scrollTo({
     <div class="  responsive flex justify-center  h-screen items-center sm:ml-16">
       <div class="text-center h-screen rounded-b-lg flex-col items-center  test  ">
 
-    <p class="w-0 overflow-auto text-left text-2xl text-cyan-400 line1 whitespace-pre-line sm:text-3xl">
+    <p class="w-0 overflow-auto text-left  text-cyan-400 line1 whitespace-pre-line ">
       $ Bonjour, <span class="cursor1">_</span>
     </p>
-    <p class="w-0 overflow-auto text-left text-2xl text-green-400 line2 whitespace-normal sm:text-3xl">
+    <p class="w-0 overflow-auto text-left  text-green-400 line2 whitespace-normal ">
       Je m'appelle Hugo Rytlewski et j'ai 18 ans.<span class="cursor2">_</span>
     </p>
     <br>
-    <p class="w-0 overflow-auto text-left text-2xl text-rose-600 line3 whitespace-normal sm:text-3xl">
+    <p class="w-0 overflow-auto text-left  text-rose-600 line3 whitespace-normal ">
       Passionné par l'informatique je me suis orienté vers le BTS SIO au lycée Suzanne Valadon, je suis actuellement en première année<span class="cursor3">_</span>
     </p>
     <br>
@@ -281,6 +281,26 @@ $ Mes Compétences_
 <style>
 
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.apropos {
+	  font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+}
+@media (max-width: 576px) {
+  .text {
+    font-size: 24px; /* Taille de texte "3xl" pour les écrans small */
+  }
+}
+
+@media (max-width: 280px) and (max-height: 653px) {
+  .apropos {
+    line-height: 2.25rem; 
+    font-size: 1rem; 
+
+
+
+  }
+}
 
 .fade-enter-active,
 .fade-leave-active {
