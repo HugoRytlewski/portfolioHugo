@@ -46,7 +46,7 @@ window.scrollTo({
   </div>
   
   <div
-    class=" anchor"
+    class="anchor"
   >
   <div>
 
