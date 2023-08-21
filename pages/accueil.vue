@@ -278,7 +278,7 @@ $ Mes Compétences_
 }
 @media (max-width: 640px){
   .sizefont {
- font-size: 1.6rem; /* 24px */
+ font-size: 1.58rem; /* 24px */
 line-height: 1.5rem; /* 32px */
 
   }
