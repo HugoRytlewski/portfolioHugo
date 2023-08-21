@@ -292,7 +292,7 @@ height: 40rem;
 height: 37rem;
 }
   .sizefont {
- font-size: 1.60rem; /* 24px */
+ font-size: 1.40rem; /* 24px */
 line-height: 1.5rem; /* 32px */
 
   }
