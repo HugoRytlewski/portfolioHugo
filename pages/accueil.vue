@@ -32,6 +32,7 @@ window.scrollTo({
   <head>
     <title>Portfolio Hugo</title>
 
+
   </head>
   <Transition >
     <Navbar v-if="y>80" />
