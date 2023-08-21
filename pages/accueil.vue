@@ -50,25 +50,25 @@ window.scrollTo({
   >
   <div>
 
-    <div class="  responsive flex justify-center  h-screen items-center sm:ml-16">
-      <div class="text-center h-screen rounded-b-lg flex-col items-center  test  ">
+    <div class=" static  mt-10 flex justify-center  h-screen items-center sm:ml-16">
+      <div class="text-center  rounded-b-lg flex-col items-center  test  ">
 
-    <p class="w-0 overflow-auto text-left text-2xl text-cyan-400 line1 whitespace-pre-line sm:text-3xl">
+    <p class="w-0 overflow-auto text-left  text-cyan-400 line1 whitespace-pre-line sizefont ">
       $ Bonjour, <span class="cursor1">_</span>
     </p>
-    <p class="w-0 overflow-auto text-left text-2xl text-green-400 line2 whitespace-normal sm:text-3xl">
+    <p class="w-0 overflow-auto text-left  text-green-400 line2 whitespace-normal sizefont">
       Je m'appelle Hugo Rytlewski et j'ai 18 ans.<span class="cursor2">_</span>
     </p>
     <br>
-    <p class="w-0 overflow-auto text-left text-2xl text-rose-600 line3 whitespace-normal sm:text-3xl">
+    <p class="w-0 overflow-auto text-left  text-rose-600 line3 whitespace-normal sizefont">
       Passionné par l'informatique je me suis orienté vers le BTS SIO au lycée Suzanne Valadon, je suis actuellement en première année<span class="cursor3">_</span>
     </p>
     <br>
-    <p class="w-0 overflow-auto text-left text-2xl text-white line4 whitespace-normal sm:text-3xl">
+    <p class="w-0 overflow-auto text-left  text-white line4 whitespace-normal sizefont">
       Je voudrais poursuivre mes études en licence pro en alternance afin d'obtenir de l'expérience dans le monde du travail et une certaine maîtrise du développement web<span class="cursor4">_</span>
     </p>
     <br>
-    <p class="w-0 overflow-auto text-left text-2xl text-green-400 line5 whitespace-normal sm:text-3xl">
+    <p class="w-0 overflow-auto text-left text-green-400 line5 whitespace-normal sizefont">
       Mon objectif serait de devenir un développeur full stack<span class="cursor5">_</span>
     </p>
   </div>
@@ -88,7 +88,7 @@ window.scrollTo({
 
     <h1
       v-if="y>500"
-      class="hidden teest md:flex justify-center text-green-400  text-4xl md:text-6xl"
+      class=" hidden teest md:flex justify-center text-green-400  text-4xl md:text-6xl"
     >
       $ Mes Compétences_
     </h1>
@@ -149,7 +149,7 @@ $ Mes Compétences_
       <Transition   name="fade">
     <h1
       v-if="y>1200"
-      class="hidden teest md:flex justify-center text-green-400  text-4xl md:text-6xl"
+      class="hidden teest md:flex justify-center text-green-400 	  text-4xl md:text-6xl"
     >
       $ Mes projets_
     </h1>
@@ -169,7 +169,7 @@ $ Mes Compétences_
   <div class="flex flex-wrap justify-center text-center mt-16 md:mt-20 text-black text-lg font-medium ">
     <div class="p-4"> 
      <nuxt-link to="/projet1">
-      <div class=" flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-75   md:hover:-translate-y-1 md:hover:scale-105  hover:ring-4 ring-green-400 md:p-28">
+      <div class=" flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-200    md:hover:-translate-y-1 md:hover:scale-105  hover:ring-4 ring-green-400 md:p-28">
         <div class="flex flex-col justify-between flex-grow">
           <img class="w-20 h-15" src="~/assets/img/logo.png" alt="resto">
         </div>
@@ -184,7 +184,7 @@ $ Mes Compétences_
 
     <div class="p-4">
       <nuxt-link to="/projet2">
-        <div class=" flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-75   md:hover:-translate-y-1 md:hover:scale-105  hover:ring-4 ring-green-400 md:p-28">
+        <div class=" flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-200   md:hover:-translate-y-1 md:hover:scale-105  hover:ring-4 ring-green-400 md:p-28">
         <div class="flex flex-col justify-between flex-grow">
           <img
             class="w-20 h-15"
@@ -196,11 +196,10 @@ $ Mes Compétences_
           <h1 class="text-2xl text-black">
             NEXTFEED
           </h1>
-        </div>
+        </div>  
       </div>
     </nuxt-link>
     </div>
-
   </div>
   <div
     id="contact"
@@ -258,37 +257,51 @@ $ Mes Compétences_
         <button type="submit" class="py-3 px-5 text-2xl text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800">Envoyer</button>
       </form>
     </div>
-   
-
-      
-
   </div>
 </section>
-
-
-  
-
-
-
-
-      
-
-  </div>
-  <Footer/>
-
+</div>
+<Footer/>
 </template>
 
 <style>
-
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 
+
+@media (min-width: 640px){
+  .sizefont {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+
+  }
+}
+@media (max-width: 640px){
+  .sizefont {
+ font-size: 1.5rem; /* 24px */
+line-height: 2rem; /* 32px */
+
+  }
+}
+@media (min-width: 280px){
+  .test {
+height: 40rem;
+}
+}
+@media (max-width: 280px){
+  .test {
+height: 37rem;
+}
+  .sizefont {
+ font-size: 1.60rem; /* 24px */
+line-height: 1.5rem; /* 32px */
+
+  }
+}
 
 .fade-enter-active,
 .fade-leave-active {
   transition: all 0.3s ease;
 }
-
 .fade-enter-from,
 .fade-leave-to {
   opacity: 100;
@@ -316,7 +329,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   background-color: #0d0d0d;
   font-family: 'VT323', monospace;
@@ -330,9 +342,6 @@ label {
 }
 
 
-.test {
-height: 40rem;
-}
 .teest{
   font-family: 'VT323', monospace;
   font-weight: lighter;
