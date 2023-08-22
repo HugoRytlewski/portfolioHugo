@@ -193,7 +193,7 @@ $ Mes Compétences_
         <div class=" flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-200   md:hover:-translate-y-1 md:hover:scale-105  hover:ring-4 ring-green-400 md:p-28">
         <div class="flex flex-col justify-between flex-grow">
           <img
-            class="w-20 h-15"
+            class="w-20 h-15 "
             src="~/assets/img/icon-nexton.png"
             alt="Nextfeed"
           >
@@ -201,6 +201,24 @@ $ Mes Compétences_
         <div class="mt-3">
           <h1 class="text-2xl text-black">
             NEXTFEED
+          </h1>
+        </div>  
+      </div>
+    </nuxt-link>
+    </div>
+    <div class="p-4">
+      <nuxt-link to="/projet3">
+        <div class=" flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-200   md:hover:-translate-y-1 md:hover:scale-105  hover:ring-4 ring-green-400 md:p-28">
+        <div class="flex flex-col justify-between flex-grow">
+          <img
+            class="w-20 h-15 rounded-xl ml-2"
+            src="~/assets/img/lettre-c.png"
+            alt="Collection"
+          >
+        </div>
+        <div class="mt-3">
+          <h1 class="text-2xl text-black">
+            Collection
           </h1>
         </div>  
       </div>
