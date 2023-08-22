@@ -207,7 +207,7 @@ $ Mes Compétences_
     </nuxt-link>
     </div>
     <div class="p-4">
-      <nuxt-link to="/projet2">
+      <nuxt-link to="/projet3">
         <div class=" flex rounded-lg h-full p-20 bg-white   flex-col ease-in duration-200   md:hover:-translate-y-1 md:hover:scale-105  hover:ring-4 ring-green-400 md:p-28">
         <div class="flex flex-col justify-between  items-center justify-center">
           <img
