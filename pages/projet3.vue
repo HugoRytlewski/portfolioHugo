@@ -24,7 +24,7 @@ const ShowCss = ref(false);
       <div class="mt-10 md:mt-28 w-3/5 border-b-2 pb-4 border-white md:flex justify-between underline underline-offset-8
 ">
         <h1 class="text-4xl text-yellow-300">Collection </h1>
-        <a class="text-yellow-300 text-xl md:text-2xl" href="https://animationtest.vercel.app">Redirection vers le site !</a>
+        <a class="text-yellow-300 text-xl md:text-2xl" href="https://animationtest.vercel.app">Consulter le site !</a>
  
 
       </div>
