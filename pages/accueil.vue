@@ -292,7 +292,7 @@ $ Mes Compétences_
 
 .textcustom{
 
-  font-size: 1.37rem; /* 24px */
+  font-size: 1.35rem; /* 24px */
 line-height: 2rem; /* 32px */
 }
 
