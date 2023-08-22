@@ -80,10 +80,10 @@ const ShowCss = ref(false);
   <div id="controls-carousel" class="relative w-full" data-carousel="static">
 <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="~/assets/img/resto.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+        <img src="~/assets/img/resto.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="screen-resto1">
     </div>
     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-        <img src="~/assets/img/test.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+        <img src="~/assets/img/test.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="screen-resto2">
     </div>
    
 </div>

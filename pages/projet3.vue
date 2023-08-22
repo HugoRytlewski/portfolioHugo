@@ -20,7 +20,7 @@ const ShowCss = ref(false);
 
   <div class="flex-grow">
     <div class="mt-28 flex flex-col justify-center items-center">
-      <img class="w-2/5 h-3/6 rounded-xl md:w-auto" src="~/assets/img/lettre-c.ico " alt="nexton">
+      <img class="w-2/5 h-3/6 rounded-xl md:w-auto" src="~/assets/img/lettre-c.ico " alt="collection-logo">
       <div class="mt-10 md:mt-28 w-3/5 border-b-2 pb-4 border-white md:flex justify-between underline underline-offset-8
 ">
         <h1 class="text-4xl text-yellow-300">Collection </h1>
@@ -79,10 +79,10 @@ const ShowCss = ref(false);
     <div id="controls-carousel" class="relative w-full" data-carousel="static">
       <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
         <div class="hidden duration-300 ease-in-out" data-carousel-item>
-          <img src="~/assets/img/collection2.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          <img src="~/assets/img/collection2.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="screen-collection">
         </div>
         <div class="hidden duration-300 ease-in-out" data-carousel-item="active">
-          <img src="~/assets/img/collection.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          <img src="~/assets/img/collection.png" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="screen-collection">
         </div>
       </div>
       <div class="flex justify-center items-center pt-4">
