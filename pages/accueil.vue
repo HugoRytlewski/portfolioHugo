@@ -207,17 +207,17 @@ $ Mes Compétences_
     </nuxt-link>
     </div>
     <div class="p-4">
-      <nuxt-link to="/projet3">
-        <div class=" flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-200   md:hover:-translate-y-1 md:hover:scale-105  hover:ring-4 ring-green-400 md:p-28">
-        <div class="flex flex-col justify-between flex-grow">
+      <nuxt-link to="/projet2">
+        <div class=" flex rounded-lg h-full p-20 bg-white   flex-col ease-in duration-200   md:hover:-translate-y-1 md:hover:scale-105  hover:ring-4 ring-green-400 md:p-28">
+        <div class="flex flex-col justify-between  items-center justify-center">
           <img
-            class="w-20 h-15 object-cover rounded-xl ml-2"
+            class="w-20 h-15 rounded-xl "
             src="~/assets/img/lettre-c.png"
-            alt="Collection"
+            alt="Nextfeed"
           >
         </div>
         <div class="mt-3">
-          <h1 class="text-2xl text-black">
+          <h1 class="textcustom  text-black">
             Collection
           </h1>
         </div>  
@@ -290,7 +290,11 @@ $ Mes Compétences_
 <style>
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+.textcustom{
 
+  font-size: 1.37rem; /* 24px */
+line-height: 2rem; /* 32px */
+}
 
 @media (min-width: 640px){
   .sizefont {
