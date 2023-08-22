@@ -13,7 +13,7 @@ const ShowCss = ref(false);
 
 </script>
 <template>
-  <title>Projet NEXTFEED</title>
+  <title>Projet Collection</title>
 
 <div class="flex flex-col min-h-screen">
   <NavbarProjet />
