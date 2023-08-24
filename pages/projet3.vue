@@ -23,10 +23,10 @@ const ShowCss = ref(false);
       <img class="w-2/5 h-3/6 rounded-xl md:w-auto" src="~/assets/img/lettre-c.ico " alt="collection-logo">
       <div class="mt-10 md:mt-28 w-3/5 border-b-2 pb-4 border-white md:flex justify-between ">
         <h1 class="text-4xl text-yellow-300">Collection </h1>
-        <div class="flex">
+        <div class="flex gap-5">
           <a class="text-yellow-300 text-xl md:text-2xl" href="https://animationtest.vercel.app">Consulter le site </a>
 
-          <a class="text-yellow-300 text-xl md:text-2xl underline underline-offset-8" href="">ici!</a>
+          <a class="text-yellow-300 text-xl md:text-2xl underline underline-offset-8" href=""> ici!</a>
         </div>
         
  
