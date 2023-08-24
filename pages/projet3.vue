@@ -26,7 +26,8 @@ const ShowCss = ref(false);
         <div class="flex gap-2">
           <a class="text-yellow-300 text-xl md:text-2xl" href="https://animationtest.vercel.app">Consulter le site </a>
 
-          <a class="text-yellow-300 text-xl md:text-2xl underline underline-offset-8" href="">ici !</a>
+          <a class="text-yellow-300 text-xl md:text-2xl underline underline-offset-8" href="">ici </a>
+          <a class="text-yellow-300 text-xl md:text-2xl underline underline-offset-8" href="">! </a>
         </div>
         
  
