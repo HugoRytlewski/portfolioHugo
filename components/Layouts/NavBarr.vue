@@ -1,5 +1,5 @@
 <template>
-  <ul class="fixed w-screen block flex justify-between   text-white z-40 text text-lg top-0 item-center drop-shadown-md p-7">
+  <ul class="fixed w-screen block flex justify-between   text-white z-50 text text-lg top-0 item-center drop-shadown-md p-7">
     <li>
       <NuxtLink to="/accueil#propos">
         <button class="flex items-center justify-center ml-4 ">
