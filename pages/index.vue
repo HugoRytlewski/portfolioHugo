@@ -64,6 +64,10 @@ export default {
     <title>Chargement...</title>
     <meta name="keywords" content="portfolio étudiant, Hugo Rytlewski, développement web, projets de programmation, conception de sites, optimisation SEO, apprentissage en ligne, compétences techniques, HTML, CSS, JavaScript, réalisations académiques, création de sites web, UX/UI, sites responsives, projets interactifs, référencement en ligne, balises meta, stratégies SEO, intégration web, développement frontend, développement backend, codage propre, résolution de problèmes, accessibilité web, expérience utilisateur, projets personnels, compétences en programmation">
     <meta property="og:type" content="website">
+    <meta name="author" content="Hugo Rytlewski">
+    <meta name="copyright" content="Hugo Rytlewski">
+    <meta name="description" content="Portfolio Hugo Rytlewski étudiant en BTS SIO.">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <meta property="og:url" content="https://www.hugorytlewski.com">
     <meta property="og:title" content="Hugo Rytlewski Portfolio">
     <meta property="og:description" content="Portfolio de Hugo Rytlewski.">
