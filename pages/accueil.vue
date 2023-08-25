@@ -31,9 +31,9 @@ window.scrollTo({
 <template>
   <head>
     <title>Portfolio Hugo Rytlewski</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
   </head>
+
+
   <Transition >
     <Navbar v-if="y>80" />
     <Navbar2 v-else />
@@ -41,11 +41,10 @@ window.scrollTo({
 
   <div
     class="scroll-container mt-16"
-    id="propos"
-    
+    id="propos"  
   >
   </div>
-  
+
   <div
     class="anchor"
   >
