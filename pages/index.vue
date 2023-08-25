@@ -67,6 +67,7 @@ export default {
     <meta name="author" content="Hugo Rytlewski">
     <meta name="copyright" content="Hugo Rytlewski">
     <meta name="description" content="Portfolio Hugo Rytlewski étudiant en BTS SIO.">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <meta property="og:url" content="https://www.hugorytlewski.com">
     <meta property="og:title" content="Hugo Rytlewski Portfolio">
     <meta property="og:description" content="Portfolio de Hugo Rytlewski.">
