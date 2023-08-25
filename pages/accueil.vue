@@ -31,7 +31,6 @@ window.scrollTo({
 <template>
   <head>
     <title>Portfolio Hugo Rytlewski</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
   
   </head>
   <Transition >
