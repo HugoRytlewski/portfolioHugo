@@ -62,7 +62,7 @@ window.scrollTo({
     </p>
     <br>
     <p class="w-0 overflow-auto text-left  text-rose-600 line3 whitespace-normal sizefont">
-      Passionné par l'informatique je me suis orienté vers le BTS SIO au lycée Suzanne Valadon, je suis actuellement en première année<span class="cursor3">_</span>
+      Passionné par l'informatique je me suis orienté vers le BTS SIO au lycée Suzanne Valadon, je suis actuellement en deuxième année<span class="cursor3">_</span>
     </p>
     <br>
     <p class="w-0 overflow-auto text-left  text-white line4 whitespace-normal sizefont">
@@ -168,6 +168,7 @@ $ Mes Compétences_
 </div>
   </div>
   <div class="flex flex-wrap justify-center text-center mt-16 md:mt-20 text-black text-lg font-medium ">
+
     <div class="p-4"> 
      <nuxt-link to="/projet1">
       <div class=" flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-200    md:hover:-translate-y-1 md:hover:scale-105  hover:ring-4 ring-green-400 md:p-28">
@@ -201,24 +202,45 @@ $ Mes Compétences_
       </div>
     </nuxt-link>
     </div>
+
     <div class="p-4">
       <nuxt-link to="/projet3">
         <div class=" flex rounded-lg h-full p-20 bg-white   flex-col ease-in duration-200   md:hover:-translate-y-1 md:hover:scale-105  hover:ring-4 ring-green-400 md:p-28">
         <div class="flex flex-col justify-between  items-center justify-center">
           <img
             class="w-20 h-15 rounded-xl "
-            src="~/assets/img/lettre-c.png"
-            alt="Nextfeed"
+            src="~/assets/img/meteo.png"
+            alt="Météo"
           >
         </div>
         <div class="mt-3">
           <h1 class="textcustom  text-black">
-            Collection
+            Météo
           </h1>
         </div>  
       </div>
     </nuxt-link>
     </div>
+    
+    <div class="p-4">
+      <nuxt-link to="/projet4">
+        <div class=" flex rounded-lg h-full p-20 bg-white   flex-col ease-in duration-200   md:hover:-translate-y-1 md:hover:scale-105  hover:ring-4 ring-green-400 md:p-28">
+        <div class="flex flex-col justify-between  items-center justify-center">
+          <img
+            class="w-20 h-15 rounded-xl "
+            src="~/assets/img/lettre-f.png"
+            alt="Feed"
+          >
+        </div>
+        <div class="mt-3">
+          <h1 class="textcustom  text-black">
+            Feed 
+          </h1>
+        </div>  
+      </div>
+    </nuxt-link>
+    </div>
+    
   </div>
   <div
     id="contact"
@@ -244,7 +266,7 @@ $ Mes Compétences_
   <Transition   name="fade">
 
 <h1
-  v-if="y>1700"
+  v-if="y>2400"
   class=" teest md:hidden flex justify-center text-green-400  text-4xl md:text-6xl"
 >
   $ Contact
