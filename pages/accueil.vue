@@ -58,7 +58,7 @@ window.scrollTo({
     </p>
     <br>
     <p class="w-0 overflow-auto text-left  text-green-400 line2 whitespace-normal sizefont">
-      Je m'appelle Hugo Rytlewski et j'ai 18 ans.<span class="cursor2">_</span>
+      Je m'appelle Hugo Rytlewski et j'ai 19 ans.<span class="cursor2">_</span>
     </p>
     <br>
     <p class="w-0 overflow-auto text-left  text-rose-600 line3 whitespace-normal sizefont">
