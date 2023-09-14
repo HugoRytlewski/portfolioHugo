@@ -7,12 +7,14 @@
             </span>
             <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-white mr-0 gap-4 md:mr-16 sm:mt-0">
                 <li>
-                    <a href="https://www.linkedin.com/in/hugo-rytlewski-b06841281/">
+                    <a href="https://www.linkedin.com/in/hugo-rytlewski-b06841281/ " target="_blank"
+>
                     <img  class="w-6" src="~/assets/img/linkdinwhite.png" alt="">  
                     </a>  
                 </li>
                 <li>
-                    <a href="https://github.com/HugoRytlewski">
+                    <a href="https://github.com/HugoRytlewski" target="_blank"
+>
                         <img  class="w-6" src="~/assets/img/githubwhite.png" alt="">    
                     </a>
                 </li>
