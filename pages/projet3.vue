@@ -27,11 +27,11 @@ const showNuxt = ref(false);
         <div class="flex gap-2">
           <a class="text-white text-xl md:text-2xl" >Consulter le site </a>
 
-          <a class="text-white text-xl md:text-2xl underline underline-offset-8" href="https://meteo-app-peach.vercel.app">ici </a>
-          <a class="text-white text-xl md:text-2xl " href="https://meteo-app-peach.vercel.app">! </a>
+          <a class="text-white text-xl md:text-2xl underline underline-offset-8" href="https://meteo-app-peach.vercel.app" target="_blank">ici </a>
+          <a class="text-white text-xl md:text-2xl " href="https://meteo-app-peach.vercel.app" target="_blank">! </a>
         </div>
         
- 
+
 
       </div>
       <div class="mt-8 md:mt-10 w-3/5 gap-8 md:flex">
