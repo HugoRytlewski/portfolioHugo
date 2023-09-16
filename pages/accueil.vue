@@ -23,7 +23,6 @@ function scrollToId() {
   });
 }
 
-
 const line1= "$ Bonjour,";
 const line2= "Je m'appelle Hugo Rytlewski et j'ai 19 ans_.";
 const line3= "Passionné par l'informatique je me suis orienté vers le BTS SIO au lycée Suzanne Valadon, je suis actuellement en deuxième année_";
