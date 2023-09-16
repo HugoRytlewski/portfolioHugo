@@ -44,16 +44,23 @@ onMounted(() => {
         charIndex++;
         setTimeout(() => {
           typeText(lineIndex, charIndex);
-        }, 1); 
+        }, 1); // Délai court pour afficher le prochain caractère
+      } else {
+        // Toute la ligne précédente est affichée, passons à la ligne suivante (sans délai)
+        const nextLineIndex = lineIndex + 1;
+        if (nextLineIndex < lineElements.length) {
+          typeText(nextLineIndex, 0);
+        }
       }
     }
-    for (let i = 0; i < lineElements.length; i++) {
-      setTimeout(() => {
-        typeText(i, 0);
-      }, i * 900); 
+
+    // Commencez avec la première ligne
+    if (lineElements.length > 0) {
+      typeText(0, 0);
     }
   }
 });
+
 </script>
 <template>
   <head>
@@ -67,7 +74,7 @@ onMounted(() => {
   </Transition>
 
   <div
-    class="scroll-container h-[5vh] xl:h-0 mt-16"
+    class="scroll-container h-[5vh] xl:h-0 mt-10 xs:mt-16"
     id="propos"  
   >
   </div>
@@ -77,7 +84,7 @@ onMounted(() => {
   >
   <div>
 
-    <div class="w-[80vw] mt-10 xl:mt-48 flex flex-col justify-start test h-screen ml-10 mr-10 gap-6 xl:ml-52">
+    <div class="w-[80vw] xs:mt-10 xl:mt-48 flex flex-col justify-start test h-screen ml-10 mr-10 gap-6 xl:ml-52">
       <p class="mt-4 overflow-auto text-left text-cyan-400  whitespace-normal sizefont"></p>
       <p class=" overflow-auto text-left text-green-400  whitespace-normal sizefont"></p>
       <p class=" overflow-auto text-left text-rose-600  whitespace-normal sizefont"></p>
