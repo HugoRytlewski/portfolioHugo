@@ -44,7 +44,7 @@ onMounted(() => {
         charIndex++;
         setTimeout(() => {
           typeText(lineIndex, charIndex);
-        }, 1); // Délai court pour afficher le prochain caractère
+        }, 0); // Délai court pour afficher le prochain caractère
       } else {
         // Toute la ligne précédente est affichée, passons à la ligne suivante (sans délai)
         const nextLineIndex = lineIndex + 1;
