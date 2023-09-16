@@ -35,7 +35,6 @@ const textLines = [line1, line2, line3, line4, line5];
 onMounted(() => {
   if (process.client) {
     const lineElements = document.querySelectorAll('.sizefont');
-    const textLines = ["Première ligne de texte", "Deuxième ligne de texte", "Troisième ligne de texte"]; // Remplacez par vos lignes de texte
 
     function typeText(lineIndex, charIndex) {
       const lineElement = lineElements[lineIndex];
