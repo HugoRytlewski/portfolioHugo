@@ -23,40 +23,39 @@ function scrollToId() {
   });
 }
 
-const line1= "$ Bonjour,";
-const line2= "Je m'appelle Hugo Rytlewski et j'ai 19 ans_.";
-const line3= "Passionné par l'informatique je me suis orienté vers le BTS SIO au lycée Suzanne Valadon, je suis actuellement en deuxième année_";
-const line4= "Je voudrais poursuivre mes études en licence pro en alternance afin d'obtenir de l'expérience dans le monde du travail et une certaine maîtrise du développement web_";
-const line5= "Mon objectif serait de devenir un développeur full stack_";
+const textLines = [
+  "$ Bonjour,",
+  "Je m'appelle Hugo Rytlewski et j'ai 19 ans_.",
+  "Passionné par l'informatique, j'ai choisi le BTS SIO au lycée Suzanne Valadon, où je suis actuellement en deuxième année.",
+  "Je souhaite poursuivre mes études en licence professionnelle en alternance pour acquérir de l'expérience professionnelle et maîtriser le développement web.",
+  "Mon objectif est de devenir un développeur full stack."
+];
 
-const textLines = [line1, line2, line3, line4, line5];
+document.addEventListener("DOMContentLoaded", () => {
+  const lineElements = document.querySelectorAll('.sizefont');
 
-onMounted(() => {
-  if (process.client) {
-    const lineElements = document.querySelectorAll('.sizefont');
-
-    function typeText(lineIndex, charIndex) {
-      const lineElement = lineElements[lineIndex];
-      const text = textLines[lineIndex];
-      if (charIndex <= text.length) {
-        lineElement.textContent = text.substring(0, charIndex);
-        charIndex++;
-        requestAnimationFrame(() => {
-          typeText(lineIndex, charIndex);
-        });
-      } else {
-        const nextLineIndex = lineIndex + 1;
-        if (nextLineIndex < lineElements.length) {
-          typeText(nextLineIndex, 0);
-        }
+  function typeText(lineIndex, charIndex) {
+    const lineElement = lineElements[lineIndex];
+    const text = textLines[lineIndex];
+    if (charIndex <= text.length) {
+      lineElement.textContent = text.substring(0, charIndex);
+      charIndex++;
+      requestAnimationFrame(() => {
+        typeText(lineIndex, charIndex);
+      });
+    } else {
+      const nextLineIndex = lineIndex + 1;
+      if (nextLineIndex < lineElements.length) {
+        typeText(nextLineIndex, 0);
       }
     }
+  }
 
-    if (lineElements.length > 0) {
-      typeText(0, 0);
-    }
+  if (lineElements.length > 0) {
+    typeText(0, 0);
   }
 });
+
 
 
 </script>
