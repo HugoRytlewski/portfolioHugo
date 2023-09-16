@@ -1,6 +1,4 @@
-<script setup lang="ts">
-
-
+<script setup>
 import Navbar from '../components/Layouts/NavBar.vue';
 import Navbar2 from '../components/Layouts/NavBarr.vue';
 import Footer from '../components/Layouts/Footer.vue';
@@ -18,16 +16,45 @@ import { EffectCards } from "swiper";
 const modules = [EffectCards];
 
 function scrollToId() {
-
-window.scrollTo({
+  window.scrollTo({
     top: 0,
     left: 0,
     behavior: "smooth"
-})
+  });
 }
 
-</script>
 
+const line1= "$ Bonjour,";
+const line2= "Je m'appelle Hugo Rytlewski et j'ai 19 ans.<span class='cursor2'>_</span>";
+const line3= "Passionné par l'informatique je me suis orienté vers le BTS SIO au lycée Suzanne Valadon, je suis actuellement en deuxième année_";
+const line4= "Je voudrais poursuivre mes études en licence pro en alternance afin d'obtenir de l'expérience dans le monde du travail et une certaine maîtrise du développement web_";
+const line5= "Mon objectif serait de devenir un développeur full stack_";
+
+const textLines = [line1, line2, line3, line4, line5];
+
+onMounted(() => {
+  if (process.client) {
+    const lineElements = document.querySelectorAll('.sizefont');
+
+    function typeText(lineIndex, charIndex) {
+      const lineElement = lineElements[lineIndex];
+      const text = textLines[lineIndex];
+      if (charIndex <= text.length) {
+        lineElement.innerHTML = text.substring(0, charIndex);
+        charIndex++;
+        setTimeout(() => {
+          typeText(lineIndex, charIndex);
+        }, 1); 
+      }
+    }
+    for (let i = 0; i < lineElements.length; i++) {
+      setTimeout(() => {
+        typeText(i, 0);
+      }, i * 900); 
+    }
+  }
+});
+</script>
 <template>
   <head>
     <title>Portfolio Hugo Rytlewski</title>
@@ -40,40 +67,22 @@ window.scrollTo({
   </Transition>
 
   <div
-    class="scroll-container mt-16"
+    class="scroll-container h-[5vh] xl:h-0 mt-16"
     id="propos"  
   >
   </div>
 
   <div
-    class="anchor"
+    class="anchor "  
   >
   <div>
 
-    <div class=" static  mt-10 flex justify-center  h-screen items-center sm:ml-16">
-      <div class="text-center  rounded-b-lg flex-col items-center  test  ">
-
-    <p class="w-0 overflow-auto text-left  text-cyan-400 line1 whitespace-pre-line sizefont ">
-      $ Bonjour, <span class="cursor1">_</span>
-    </p>
-    <br>
-    <p class="w-0 overflow-auto text-left  text-green-400 line2 whitespace-normal sizefont">
-      Je m'appelle Hugo Rytlewski et j'ai 19 ans.<span class="cursor2">_</span>
-    </p>
-    <br>
-    <p class="w-0 overflow-auto text-left  text-rose-600 line3 whitespace-normal sizefont">
-      Passionné par l'informatique je me suis orienté vers le BTS SIO au lycée Suzanne Valadon, je suis actuellement en deuxième année<span class="cursor3">_</span>
-    </p>
-    <br>
-    <p class="w-0 overflow-auto text-left  text-white line4 whitespace-normal sizefont">
-      Je voudrais poursuivre mes études en licence pro en alternance afin d'obtenir de l'expérience dans le monde du travail et une certaine maîtrise du développement web<span class="cursor4">_</span>
-    </p>
-    <br>
-    <p class="w-0 overflow-auto text-left text-green-400 line5 whitespace-normal sizefont">
-      Mon objectif serait de devenir un développeur full stack<span class="cursor5">_</span>
-    </p>
-  </div>
-  
+    <div class="w-[80vw] mt-10 xl:mt-48 flex flex-col justify-start test h-screen ml-10 mr-10 gap-6 xl:ml-52">
+      <p class="mt-4 overflow-auto text-left text-cyan-400  whitespace-normal sizefont"></p>
+      <p class=" overflow-auto text-left text-green-400  whitespace-normal sizefont"></p>
+      <p class=" overflow-auto text-left text-rose-600  whitespace-normal sizefont"></p>
+      <p class=" overflow-auto text-left text-white  whitespace-normal sizefont"></p>
+      <p class=" overflow-auto text-left text-green-400  whitespace-normal sizefont"></p>
 </div>
   </div>
   </div>
@@ -392,76 +401,7 @@ label {
   font-weight: lighter;
 
 }
-.line1 {
-  -webkit-animation: type .4s 1s steps(20, end) forwards;
 
-}
-
-.cursor1 {
-  -webkit-animation: blink 1s 1s 2 forwards;
-}
-
-.line2 {
-  -webkit-animation: type .4s 1.5s steps(20, end) forwards;
-}
-.cursor2 {
-  -webkit-animation: blink 1s 1.5s 2 forwards;
-
-}
-.line3 {
-  -webkit-animation: type .4s 2s steps(20, end) forwards;
-}
-.cursor3 {
-  -webkit-animation: blink 1s 2s 2 forwards;
-}
-.line4 {
-  -webkit-animation: type .4s 2.5s steps(20, end) forwards;
-}
-.cursor4 {
-  -webkit-animation: blink 1s 2.5s forwards;
-}
-.line5 {
-  -webkit-animation: type .4s 3.5s steps(20, end) forwards;
-}
-.cursor5 {
-  -webkit-animation: blink 1s 3.5s infinite;
-}
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;     
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 @media (min-width: 1024px) { @keyframes type {
   to {
     width: 80vw;
