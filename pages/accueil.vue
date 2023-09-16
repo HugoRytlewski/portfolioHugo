@@ -25,7 +25,7 @@ function scrollToId() {
 
 
 const line1= "$ Bonjour,";
-const line2= "Je m'appelle Hugo Rytlewski et j'ai 19 ans.<span class='cursor2'>_</span>";
+const line2= "Je m'appelle Hugo Rytlewski et j'ai 19 ans_.";
 const line3= "Passionné par l'informatique je me suis orienté vers le BTS SIO au lycée Suzanne Valadon, je suis actuellement en deuxième année_";
 const line4= "Je voudrais poursuivre mes études en licence pro en alternance afin d'obtenir de l'expérience dans le monde du travail et une certaine maîtrise du développement web_";
 const line5= "Mon objectif serait de devenir un développeur full stack_";
