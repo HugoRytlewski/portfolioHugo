@@ -35,18 +35,18 @@ const textLines = [line1, line2, line3, line4, line5];
 onMounted(() => {
   if (process.client) {
     const lineElements = document.querySelectorAll('.sizefont');
+    const textLines = ["Première ligne de texte", "Deuxième ligne de texte", "Troisième ligne de texte"]; // Remplacez par vos lignes de texte
 
     function typeText(lineIndex, charIndex) {
       const lineElement = lineElements[lineIndex];
       const text = textLines[lineIndex];
       if (charIndex <= text.length) {
-        lineElement.innerHTML = text.substring(0, charIndex);
+        lineElement.textContent = text.substring(0, charIndex);
         charIndex++;
-        setTimeout(() => {
+        requestAnimationFrame(() => {
           typeText(lineIndex, charIndex);
-        }, 0); // Délai court pour afficher le prochain caractère
+        });
       } else {
-        // Toute la ligne précédente est affichée, passons à la ligne suivante (sans délai)
         const nextLineIndex = lineIndex + 1;
         if (nextLineIndex < lineElements.length) {
           typeText(nextLineIndex, 0);
@@ -54,12 +54,12 @@ onMounted(() => {
       }
     }
 
-    // Commencez avec la première ligne
     if (lineElements.length > 0) {
       typeText(0, 0);
     }
   }
 });
+
 
 </script>
 <template>
