@@ -233,11 +233,11 @@ onMounted(() => {
 
             <div  class=" flex flex-col lg:flex-row items-center   w-[95vw]  lg:h-[30rem] lg:w-[60vw]">
 
-            <div class="hidden lg:block translate-y-[-30%]   lg:translate-y-0 lg:translate-x-[-30%]  duration-700  lg:hover:shadow-sm shadow-2xl	 z-10 h-[10rem] w-[80vw]  lg:w-[20vw]  lg:h-[40vh] rounded-xl bg-green-500">
+              <div class="hidden lg:block translate-y-[-30%] lg:translate-y-0 lg:translate-x-[-30%]  duration-700  lg:hover:shadow-sm shadow-2xl	 z-10 h-[10rem] w-[80vw]  lg:w-[20vw]  lg:h-[40vh] rounded-xl bg-green-500">
             </div>
-        <div  class="flex flex-col lg:mt-[-2rem] mt-[-3rem] lg:mt-0 justify-center p-3 gap-2 lg:gap-6 lg:w-[35vw] w-[80vw] text-center items-center lg:text-start">
-          <p class="lg:text-xl">Veille Technologique</p>
-          <h1 class="lg:text-3xl ">C'est quoi ?</h1>
+            <div  class="flex flex-col mt-[-2rem] lg:mt-0 justify-center h-[30rem] p-3 gap-2 lg:gap-6 lg:w-[35vw] w-[80vw] text-center items-center lg:text-start">
+          <p class="text-lg lg:text-xl">Veille Technologique</p>
+          <h1 class="text-2xl lg:text-3xl ">C'est quoi ?</h1>
           <p class="lg:text-2xl text-center"> La veille informatique consiste à surveiller, analyser et partager des informations technologiques pour rester compétent et à jour en developpement web et en CyberSécurité.</p>
           <button @click=" Text1= !Text1,Text2 = !Text2" class="bg-green-500 lg:hover:bg-green-700 duration-300 w-48 text-white rounded-xl p-2">En savoir plus</button>
         </div>
