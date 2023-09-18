@@ -231,9 +231,9 @@ onMounted(() => {
       <Transition name="slide2">
           <div v-if="Text2 && y>1800" class="absolute  ">
 
-          <div  class=" flex flex-col lg:flex-row items-center  h-[90vh] w-[95vw]  lg:h-[30rem] lg:w-[60vw]">
+            <div  class=" flex flex-col lg:flex-row items-center   w-[95vw]  lg:h-[30rem] lg:w-[60vw]">
 
-            <div class="translate-y-[-30%]   lg:translate-y-0 lg:translate-x-[-30%]  duration-700  lg:hover:shadow-sm shadow-2xl	 z-10 h-[10rem] w-[80vw]  lg:w-[20vw]  lg:h-[40vh] rounded-xl bg-green-500">
+            <div class="hidden lg:block translate-y-[-30%]   lg:translate-y-0 lg:translate-x-[-30%]  duration-700  lg:hover:shadow-sm shadow-2xl	 z-10 h-[10rem] w-[80vw]  lg:w-[20vw]  lg:h-[40vh] rounded-xl bg-green-500">
             </div>
         <div  class="flex flex-col lg:mt-[-2rem] mt-[-3rem] lg:mt-0 justify-center p-3 gap-2 lg:gap-6 lg:w-[35vw] w-[80vw] text-center items-center lg:text-start">
           <p class="lg:text-xl">Veille Technologique</p>
@@ -248,18 +248,20 @@ onMounted(() => {
     <Transition name="slide1">
 
       <div v-if="Text1 && y>1900" class="absolute ">
-        <div  class=" flex flex-col lg:flex-row items-center  h-[90vh] w-[95vw]  lg:h-[30rem] lg:w-[60vw]">
 
-        <div class="translate-y-[-30%] lg:translate-y-0 lg:translate-x-[-30%]  duration-700  lg:hover:shadow-sm shadow-2xl	 z-10 h-[10rem] w-[80vw]  lg:w-[20vw]  lg:h-[40vh] rounded-xl bg-green-500">
-            </div>
-            <div  class="flex flex-col mt-[-2rem] lg:mt-0 justify-center p-3 gap-2 lg:gap-6 lg:w-[35vw] w-[80vw] text-center items-center lg:text-start">
-          <p class="lg:text-xl">Veille Technologique</p>
-          <h1 class="lg:text-3xl ">Outil de Veille</h1>
-          <p class="lg:text-2xl text-center">Pour ma veille informatique j'utilise l'outil <a class="hover:underline italic" href="/projet4"> Feed Tracker</a>  c'est un outil que j'ai codé et que j'utilise au quotidien, je consulte des flux rss sur la CyberSécurité et le developpement Web.</p>
-          <button @click=" Text2= !Text2,Text1 = !Text1" class="bg-green-500 lg:hover:bg-green-700 duration-300 w-48 text-white rounded-xl p-2">En savoir plus</button>
-        </div>
+        <div  class=" flex flex-col lg:flex-row items-center   w-[95vw]  lg:h-[30rem] lg:w-[60vw]">
+          
+          <div class="hidden lg:block translate-y-[-30%] lg:translate-y-0 lg:translate-x-[-30%]  duration-700  lg:hover:shadow-sm shadow-2xl	 z-10 h-[10rem] w-[80vw]  lg:w-[20vw]  lg:h-[40vh] rounded-xl bg-green-500">
           </div>
+          <div  class="flex flex-col mt-[-2rem] lg:mt-0 justify-center h-[30rem] p-3 gap-2 lg:gap-6 lg:w-[35vw] w-[80vw] text-center items-center lg:text-start">
+            <p class="text-lg lg:text-xl">Veille Technologique</p>
+            <h1 class="text-2xl lg:text-3xl ">Outil de Veille</h1>
+            <p class="lg:text-2xl text-center">Pour ma veille informatique j'utilise l'outil <a class="hover:underline italic" href="/projet4"> Feed Tracker</a>  c'est un outil que j'ai codé et que j'utilise au quotidien, je consulte des flux rss sur la CyberSécurité et le developpement Web.</p>
+            <button @click=" Text2= !Text2,Text1 = !Text1" class="bg-green-500 lg:hover:bg-green-700 duration-300 w-48 text-white rounded-xl p-2">En savoir plus</button>
+          </div>
+
         </div>
+      </div>
 
     </Transition>
 
@@ -377,7 +379,7 @@ line-height: 1.5rem; /* 32px */
 
   .slide2-enter-active,
 .slide2-leave-active {
-  transition: all 0.4s ease;
+  transition: all 0.6s ease;
 }
 .slide2-enter-from,
 .slide2-leave-to {
@@ -388,11 +390,11 @@ line-height: 1.5rem; /* 32px */
 
 .slide1-enter-active,
 .slide1-leave-active {
-  transition: all 0.4s ease;
+  transition: all 0.6s ease;
 }
 .slide1-enter-from,
 .slide1-leave-to {
-  transform: scale(0.5);
+  transform: translateX(-100%); /* L'élément sortant va vers la gauche */
   opacity: 100;
   opacity: 0;
 }
