@@ -104,6 +104,23 @@
             <span class=" hover:text-neutral-400">
               <h2 class="teest text-xl">
                 <a
+                  href="#veille"
+                  @click="isShowDropdown=!isShowDropdown"
+
+                >
+                  Veille
+
+                </a>
+
+              </h2>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button>
+            <span class=" hover:text-neutral-400">
+              <h2 class="teest text-xl">
+                <a
                   href="#contact"
                   @click="isShowDropdown=!isShowDropdown"
 
@@ -164,6 +181,22 @@
           </span>
         </button>
       </li>
+      <li>
+          <button>
+            <span class=" hover:text-neutral-400">
+              <h2 class="teest text-xl">
+                <a
+                  href="#veille"
+
+                >
+                  Veille
+
+                </a>
+
+              </h2>
+            </span>
+          </button>
+        </li>
       <li>
         <button>
           <span class="text-items hover:text-neutral-400">
