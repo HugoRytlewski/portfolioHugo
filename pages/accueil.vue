@@ -225,7 +225,7 @@ onMounted(() => {
         </h1>
       </Transition>
     </div>
-    <div class="relative flex justify-center mt-40 md:mt-48 xl:mt-24 w-screen  items-center lg:overflow-hidden">
+    <div class="relative flex justify-center mt-40 md:mt-48 xl:mt-24   items-center lg:overflow-hidden">
       <div class=" lg:flex-row items-center bg-white h-[25rem]	 w-[95vw]  lg:h-[30rem] lg:w-[60vw] rounded-xl ">
 
       <Transition name="slide2">
@@ -352,7 +352,7 @@ line-height: 1.5rem; /* 32px */
 }
 
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .slide2-enter-active,
 .slide2-leave-active {
   transition: all 0.5s ease;
@@ -375,7 +375,7 @@ line-height: 1.5rem; /* 32px */
   opacity: 0;
 }
 }
-@media (max-width: 1280px) {
+@media (max-width: 1024px) {
 
   .slide2-enter-active,
 .slide2-leave-active {
