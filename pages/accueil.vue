@@ -225,7 +225,7 @@ onMounted(() => {
         </h1>
       </Transition>
     </div>
-    <div class="relative flex justify-center mt-32 md:mt-48 xl:mt-24   items-center lg:overflow-hidden">
+    <div class="relative flex justify-center mt-24 md:mt-48 xl:mt-24   items-center lg:overflow-hidden">
       <div class=" lg:flex-row items-center bg-white h-[25rem]	 w-[95vw]  lg:h-[30rem] lg:w-[60vw] rounded-xl ">
 
       <Transition name="slide2">
