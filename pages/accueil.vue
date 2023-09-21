@@ -238,7 +238,7 @@ onMounted(() => {
             <div  class="flex flex-col mt-[-2rem] lg:mt-0 justify-center h-[30rem] p-3 gap-2 lg:gap-6 lg:w-[35vw] w-[80vw] text-center items-center lg:text-start">
           <p class="text-lg lg:text-xl">Veille Technologique</p>
           <h1 class="text-2xl lg:text-3xl ">C'est quoi ?</h1>
-          <p class="lg:text-2xl text-center"> La veille informatique consiste à surveiller, analyser et partager des informations technologiques pour rester compétent et à jour en developpement web et en CyberSécurité.</p>
+          <p class="text-xl lg:text-2xl text-center"> La veille informatique consiste à surveiller, analyser et partager des informations technologiques pour rester compétent et à jour en developpement web et en CyberSécurité.</p>
           <button @click=" Text1= !Text1,Text2 = !Text2" class="bg-green-500 lg:hover:bg-green-700 duration-300 w-48 text-white rounded-xl p-2">En savoir plus</button>
         </div>
       </div>
@@ -256,7 +256,7 @@ onMounted(() => {
           <div  class="flex flex-col mt-[-2rem] lg:mt-0 justify-center h-[30rem] p-3 gap-2 lg:gap-6 lg:w-[35vw] w-[80vw] text-center items-center lg:text-start">
             <p class="text-lg lg:text-xl">Veille Technologique</p>
             <h1 class="text-2xl lg:text-3xl ">Outil de Veille</h1>
-            <p class="lg:text-2xl text-center">Pour ma veille informatique j'utilise l'outil <a class="underline italic" href="/projet4"> Feed Tracker</a>  c'est un outil que j'ai codé et que j'utilise au quotidien, je consulte des flux rss sur la CyberSécurité et le developpement Web.</p>
+            <p class="text-xl lg:text-2xl text-center">Pour ma veille informatique j'utilise l'outil <a class="underline italic" href="/projet4"> Feed Tracker</a>  c'est un outil que j'ai codé et que j'utilise au quotidien, je consulte des flux rss sur la CyberSécurité et le developpement Web.</p>
             <button @click=" Text2= !Text2,Text1 = !Text1" class="bg-green-500 lg:hover:bg-green-700 duration-300 w-48 text-white rounded-xl p-2">En savoir plus</button>
           </div>
 
