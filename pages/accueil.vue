@@ -289,7 +289,6 @@ onMounted(() => {
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <form action="https://formsubmit.co/hugorytlewski10@gmail.com" method="post" class=" md:space-y-8">
             <div>
-              <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_next"  value="https://hugorytlewski.com/accueil#contact">
               <label for="email" class="block mb-2 text-2xl text-white">Mail</label>
               <input type="email" name="email" id="email" class="shadow-sm border border-gray-300 text-gray-900 text-xl rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-white border-gray-600 placeholder-gray-400 text-black focus:ring-primary-500 focus:border-primary-500 shadow-sm-light" placeholder="hugorytlewski10@gmail.com" required>
