@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -9,8 +9,6 @@
   justify-content: center;
   align-items: center;
 }
-
-
 
 .swiper-slide {
   display: flex;
@@ -23,7 +21,6 @@
 }
 
 .swiper-slide:nth-child(1n) {
-  
   background-color: rgb(255, 255, 255);
   background-image: url("~/assets/img/icon-green.svg");
   background-size: 40%;
@@ -36,7 +33,7 @@
 /* Code pour les écrans larges */
 @media (min-width: 1024px) {
   .swiper-slide:nth-child(1n) span {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: "Rajdhani", sans-serif;
     position: absolute;
     top: 85%;
     left: 50%;
@@ -55,7 +52,7 @@
 /* Code pour les petits écrans et mobiles */
 @media (max-width: 1024px) {
   .swiper-slide:nth-child(1n) span {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: "Rajdhani", sans-serif;
     position: absolute;
     top: 85%;
     left: 50%;
@@ -79,7 +76,7 @@
 /* Code pour les écrans larges */
 @media (min-width: 1024px) {
   .swiper-slide:nth-child(2n) span {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: "Rajdhani", sans-serif;
     position: absolute;
     top: 85%;
     left: 50%;
@@ -98,7 +95,7 @@
 /* Code pour les petits écrans et mobiles */
 @media (max-width: 1024px) {
   .swiper-slide:nth-child(2n) span {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: "Rajdhani", sans-serif;
     position: absolute;
     top: 85%;
     left: 50%;
@@ -108,7 +105,6 @@
     opacity: 1; /* Ajout de l'opacité pour afficher l'élément */
   }
 }
-
 
 .swiper-slide:nth-child(3n) {
   background-color: rgb(255, 255, 255);
@@ -123,7 +119,7 @@
 /* Code pour les écrans larges */
 @media (min-width: 1024px) {
   .swiper-slide:nth-child(3n) span {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: "Rajdhani", sans-serif;
     position: absolute;
     top: 85%;
     left: 50%;
@@ -142,7 +138,7 @@
 /* Code pour les petits écrans et mobiles */
 @media (max-width: 1024px) {
   .swiper-slide:nth-child(3n) span {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: "Rajdhani", sans-serif;
     position: absolute;
     top: 85%;
     left: 50%;
@@ -165,7 +161,7 @@
 /* Code pour les écrans larges */
 @media (min-width: 1024px) {
   .swiper-slide:nth-child(4n) span {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: "Rajdhani", sans-serif;
     position: absolute;
     top: 85%;
     left: 50%;
@@ -184,7 +180,7 @@
 /* Code pour les petits écrans et mobiles */
 @media (max-width: 1024px) {
   .swiper-slide:nth-child(4n) span {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: "Rajdhani", sans-serif;
     position: absolute;
     top: 85%;
     left: 50%;
