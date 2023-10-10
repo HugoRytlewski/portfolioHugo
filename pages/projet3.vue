@@ -127,7 +127,7 @@ const showNuxt = ref(false);
         <div class="duration-300 ease-in-out">
           <img
             src="~/assets/img/appmeteo.png"
-            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            class="absolute block max-w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="screen-collection"
           />
         </div>
