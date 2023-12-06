@@ -59,7 +59,7 @@ let Animation = {
   name: "Animation",
   name2: " (CSS)",
   description: "Projets de découverte d'animation css",
-  image: "http://localhost:3000/_nuxt/assets/img/lettre-c.ico",
+  image: "https://i.imgur.com/wqOZMGR.png",
   lien: "/Animation",
   categorie: "WEB",
 };
