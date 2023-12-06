@@ -5,6 +5,10 @@ import Footer from "../components/Layouts/Footer.vue";
 
 const Text1 = ref(false);
 const Text2 = ref(true);
+const Mix = ref(true);
+const Perso = ref(false);
+const Pro = ref(false);
+
 
 import "assets/css/main.css";
 import { useWindowScroll } from "@vueuse/core";
@@ -13,14 +17,87 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper";
+
 const modules = [EffectCards];
 
-function scrollToId() {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
+let Resto = {
+  name: "Resto.fr",
+  name2: " (BLOC2)",
+  description: "Site de restauration",
+  image: "https://hugorytlewski.com/_nuxt/logo.242898cb.png",
+  lien: "/Resto",
+  categorie: "PHP",
+};
+
+let Nextfeed = {
+  name: "Nextfeed ",
+  name2: " (Stage)",
+  description: "Site de veille technologique",
+  image: "https://hugorytlewski.com/_nuxt/icon-nexton.ab19e0a7.png",
+  lien: "/Nextfeed",
+  categorie: "RSS",
+};
+
+let Meteo = {
+  name: "Météo",
+  name2: " (API)",
+  description: "Application météo",
+  image: "https://hugorytlewski.com/_nuxt/meteo.84d10e74.ico",
+  lien: "/Meteo",
+  categorie: "API",
+};
+
+let Feed = {
+  name: "Feed",
+  name2: " (RSS)",
+  description: "Outil de veille technologique",
+  image: "https://hugorytlewski.com/_nuxt/lettre-f.d6cc9c97.ico",
+  lien: "/Feed",
+  categorie: "WEB",
+};
+let Animation = {
+  name: "Animation",
+  name2: " (CSS)",
+  description: "Projets de découverte d'animation css",
+  image: "http://localhost:3000/_nuxt/assets/img/lettre-c.ico",
+  lien: "/Animation",
+  categorie: "WEB",
+};
+
+let AP = {
+  name: "Congres",
+  name2: " (AP)",
+  description: "Site de congres pour l'association Analim",
+  image: "https://i.imgur.com/YYso54b.png",
+  lien: "/ProjetAP",
+  categorie: "RSS",
+};
+
+
+let tab = ref();
+tab.value = ref({ Resto , Feed, Meteo, AP});
+
+function sortProjectByCat(Indice) {
+  if (Indice == "PERSO") {
+    Perso.value = true;
+    Pro.value = false;
+    Mix.value = false;
+  
+
+    tab.value = ref({ Feed , Meteo , Animation });
+  } else if (Indice == "ECOLE") {
+    Perso.value = false;
+    Pro.value = true;
+    Mix.value = false;
+ 
+
+    tab.value = ref({ Resto , Nextfeed, AP });
+  } else if (Indice == "MIX") {
+    Perso.value = false;
+    Pro.value = false;
+    Mix.value = true;
+    tab.value = ref({ Resto , Feed, Meteo, AP});
+  } 
 }
 
 const textLines = [
@@ -30,6 +107,13 @@ const textLines = [
   "Je voudrais poursuivre mes études en licence pro en alternance afin d'obtenir de l'expérience dans le monde du travail et une certaine maîtrise du développement web_.",
   "Mon objectif est de devenir un développeur full stack_.",
 ];
+function scrollToId() {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+}
 
 onMounted(() => {
   if (process.client) {
@@ -164,80 +248,61 @@ onMounted(() => {
       </Transition>
     </div>
   </div>
+  <div class="flex md:mt-[10vh] mt-20 gap-3 md:mr items-center justify-center">
+    <div
+      class="bg-neutral-800 text-white rounded-full w-14 text-center border-neutral-800 border hover:border-white duration-300 cursor-pointer"
+    >
+      <p
+        class="select-none"
+        :class="{ 'bg-white rounded-full text-black': Mix }"
+        @click="sortProjectByCat('MIX')"
+      >
+        MIX
+      </p>
+    </div>
+    <div
+      class="bg-neutral-800 text-white rounded-full w-14 text-center border-neutral-800 border hover:border-white duration-300 cursor-pointer"
+    >
+      <p
+        class="select-none"
+        :class="{ 'bg-white rounded-full text-black': Perso }"
+        @click="sortProjectByCat('PERSO')"
+      >
+        PERSO
+      </p>
+    </div>
+    <div
+      class="bg-neutral-800 text-white rounded-full w-14 text-center border-neutral-800 border hover:border-white duration-300 cursor-pointer"
+    >
+      <p
+        class="select-none"
+        :class="{ 'bg-white rounded-full text-black': Pro }"
+        @click="sortProjectByCat('ECOLE')"
+      >
+        ECOLE
+      </p>
+    </div>
+   
+  </div>
   <div
-    class="flex flex-wrap justify-center text-center mt-16 md:mt-20 text-black text-lg font-medium"
+    class="flex flex-wrap justify-center text-center mt-16 md:mt-10 text-black text-lg font-medium"
   >
-    <div class="p-4">
-      <nuxt-link to="/projet1">
-        <div
-          class="flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-200 md:hover:-translate-y-1 md:hover:scale-105 hover:ring-4 ring-green-400 md:p-28"
-        >
-          <div class="flex flex-col justify-between flex-grow">
-            <img class="w-20 h-15" src="~/assets/img/logo.png" alt="resto" />
-          </div>
-          <div class="mt-3">
-            <h1 class="text-2xl text-black">RESTO.FR</h1>
-          </div>
-        </div>
-      </nuxt-link>
-    </div>
-    <div class="p-4">
-      <nuxt-link to="/projet2">
-        <div
-          class="flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-200 md:hover:-translate-y-1 md:hover:scale-105 hover:ring-4 ring-green-400 md:p-28"
-        >
-          <div class="flex flex-col justify-between flex-grow">
-            <img
-              class="w-20 h-15"
-              src="~/assets/img/icon-nexton.png"
-              alt="Nextfeed"
-            />
-          </div>
-          <div class="mt-3">
-            <h1 class="text-2xl text-black">NEXTFEED</h1>
-          </div>
-        </div>
-      </nuxt-link>
-    </div>
-    <div class="p-4">
-      <nuxt-link to="/projet3">
-        <div
-          class="flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-200 md:hover:-translate-y-1 md:hover:scale-105 hover:ring-4 ring-green-400 md:p-28"
-        >
+    <div v-for="projet in tab.value" :key="projet.lien">
+      <div class="p-4">
+        <nuxt-link :to="projet.lien">
           <div
-            class="flex flex-col justify-between items-center justify-center"
+            class="flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-200 md:hover:-translate-y-1 md:hover:scale-105 hover:ring-4 ring-green-400 md:p-28"
           >
-            <img
-              class="w-20 h-15 rounded-xl"
-              src="~/assets/img/meteo.png"
-              alt="Météo"
-            />
+            <div class="flex flex-col justify-between flex-grow">
+              <img class="w-20 h-15" :src="projet.image" :alt="projet.name" />
+            </div>
+            <div class="mt-3">
+              <h1 class="text-2xl text-black">{{ projet.name }}</h1>
+              <p>{{ projet.name2 }}</p>
+            </div>
           </div>
-          <div class="mt-3">
-            <h1 class="textcustom text-black">Météo</h1>
-          </div>
-        </div>
-      </nuxt-link>
-    </div>
-    <div class="p-4">
-      <nuxt-link to="/projet4">
-        <div
-          class="flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-200 md:hover:-translate-y-1 md:hover:scale-105 hover:ring-4 ring-green-400 md:p-28"
-        >
-          <div
-            class="flex flex-col justify-between items-center justify-center"
-          >
-            <img
-              class="w-20 h-15 rounded-xl"
-              src="~/assets/img/lettre-f.png"
-              alt="Feed"
-            />
-          </div>
-          <div class="mt-3">
-            <h1 class="textcustom text-black">Feed</h1>
-          </div>
-        </div>
-      </nuxt-link>
+        </nuxt-link>
+      </div>
     </div>
   </div>
   <div id="veille" class="scroll-contact"></div>
@@ -253,7 +318,7 @@ onMounted(() => {
       </Transition>
       <Transition name="fade">
         <h1
-          v-if="y > 2400"
+          
           class="teest md:hidden flex justify-center text-green-400 text-4xl md:text-6xl"
         >
           $ Veille
@@ -340,7 +405,6 @@ onMounted(() => {
       </Transition>
       <Transition name="fade">
         <h1
-          v-if="y > 2900"
           class="teest md:hidden flex justify-center text-green-400 text-4xl md:text-6xl"
         >
           $ Contact

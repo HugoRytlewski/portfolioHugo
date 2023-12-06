@@ -19,9 +19,9 @@ const showNuxt = ref(false);
     <NavbarProjet />
 
     <div class="flex-grow">
-      <div class="mt-28 flex flex-col justify-center items-center">
+      <div class="mt-28 flex flex-col justify-center items-center ">
         <img
-          class="w-2/5 h-3/6 rounded-xl md:w-auto bg-white p-6"
+          class="w-2/5 h-3/6 rounded-xl md:w-auto bg-white p-6 "
           src="~/assets/img/meteo.ico "
           alt="collection-logo"
         />
@@ -127,7 +127,7 @@ const showNuxt = ref(false);
         <div class="duration-300 ease-in-out">
           <img
             src="~/assets/img/appmeteo.png"
-            class="absolute block max-w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            class="object-contain	absolute block max-w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="screen-collection"
           />
         </div>
