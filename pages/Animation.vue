@@ -36,6 +36,7 @@ const ShowCss = ref(false);
             <a
               class="text-white text-xl md:text-2xl underline underline-offset-8"
               href="https://animationtest.vercel.app"
+              target="_blank"
               >ici
             </a>
             <a
