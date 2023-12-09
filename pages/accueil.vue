@@ -26,7 +26,6 @@ let Resto = {
   description: "Site de restauration",
   image: "https://hugorytlewski.com/_nuxt/logo.242898cb.png",
   lien: "/Resto",
-  categorie: "PHP",
 };
 
 let Nextfeed = {
@@ -35,7 +34,6 @@ let Nextfeed = {
   description: "Site de veille technologique",
   image: "https://hugorytlewski.com/_nuxt/icon-nexton.ab19e0a7.png",
   lien: "/Nextfeed",
-  categorie: "RSS",
 };
 
 let Meteo = {
@@ -44,7 +42,6 @@ let Meteo = {
   description: "Application météo",
   image: "https://hugorytlewski.com/_nuxt/meteo.84d10e74.ico",
   lien: "/Meteo",
-  categorie: "API",
 };
 
 let Feed = {
@@ -53,7 +50,6 @@ let Feed = {
   description: "Outil de veille technologique",
   image: "https://hugorytlewski.com/_nuxt/lettre-f.d6cc9c97.ico",
   lien: "/Feed",
-  categorie: "WEB",
 };
 let Animation = {
   name: "Animation",
@@ -61,7 +57,6 @@ let Animation = {
   description: "Projets de découverte d'animation css",
   image: "https://i.imgur.com/wqOZMGR.png",
   lien: "/Animation",
-  categorie: "WEB",
 };
 
 let AP = {
@@ -70,7 +65,14 @@ let AP = {
   description: "Site de congres pour l'association Analim",
   image: "https://i.imgur.com/YYso54b.png",
   lien: "/ProjetAP",
-  categorie: "RSS",
+};
+
+let SeminaireJSon = {
+  name: "Seminaire",
+  name2: " (BLOC2)",
+  description: "Site de creation d'api et decouverte json",
+  image: "https://i.imgur.com/axCXiVM.png",
+  lien: "/JsonSeminaire",
 };
 
 
@@ -91,7 +93,7 @@ function sortProjectByCat(Indice) {
     Mix.value = false;
  
 
-    tab.value = ref({ Resto , Nextfeed, AP });
+    tab.value = ref({ Resto , Nextfeed, AP , SeminaireJSon});
   } else if (Indice == "MIX") {
     Perso.value = false;
     Pro.value = false;

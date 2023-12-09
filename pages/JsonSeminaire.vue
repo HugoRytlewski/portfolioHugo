@@ -4,16 +4,15 @@ import Footer from "../components/Layouts/Footer.vue";
 import { onMounted } from "vue";
 import { initFlowbite } from "flowbite";
 
-// initialize components based on data attribute selectors
 onMounted(() => {
   initFlowbite();
 });
 const showHtml = ref(false);
 const ShowCss = ref(false);
-const showPhp = ref(false);
+const showJSON = ref(false);
 </script>
 <template>
-  <title>Projet Ap Congrès</title>
+  <title>Projet Seminaire JSON</title>
 
   <div class="flex flex-col min-h-screen">
     <NavbarProjet />
@@ -21,26 +20,27 @@ const showPhp = ref(false);
     <div class="flex-grow">
       <div class="mt-28 flex flex-col justify-center items-center">
         <img
-          class="w-2/5 h-3/6 rounded-xl md:w-auto  "
-          src="~/assets/img/analim.ico "
+          class="w-2/5 h-3/6 rounded-xl md:w-auto"
+          src="~/assets/img/JsonSeminaire.ico "
           alt="collection-logo"
         />
         <div
           class="mt-10 md:mt-28 w-3/5 border-b-2 pb-4 border-white md:flex justify-between"
         >
-          <h1 class="text-4xl text-white">Ap Congrès</h1>
+          <h1 class="text-4xl text-white">Projet Seminaire JSON</h1>
           <div class="  md:flex">
             <p class="text-2xl  text-white">Doc Dispo :</p>
-            <a class="text-white" href="https://docs.google.com/document/d/1R93OHfE6UrLr69pC7nmPPV3zC_ZH9bv47zvsvBi-J2o/edit?usp=sharing" target="_blank"><img class="h-10 " src="~/assets/img/doc.png" alt=""></a>
+            <a class="text-white" href="https://docs.google.com/document/d/1xF4Np9bvDLm41-A-uWegjP92tyKWoD9vLmB3EZNqxTU/edit?usp=sharing" target="_blank"><img class="h-10 " src="~/assets/img/doc.png" alt=""></a>
 
         </div>
         </div>
+
         <div class="mt-8 md:mt-10 w-3/5 gap-8 md:flex">
           <h1 class="text-3xl text-white">Résumé</h1>
           <div>
             <span class="text-2xl text-white"
-              >C'est un projet réalisé dans le cadre d'un ap au sein de ma
-              formation BTS SIO.</span
+              >C'est un projet réalisé dans le cadre du Cours BLOC2 au sein de
+              ma formation BTS SIO.</span
             >
           </div>
         </div>
@@ -48,18 +48,22 @@ const showPhp = ref(false);
           <h1 class="text-3xl text-white">Mission(s)</h1>
           <div class="flex flex-col mt-4 md:mt-0">
             <span class="text-2xl text-white md:text-center"
-              >Permet la création et la modification d'une facture.</span
+              >Creation d'une API afin de recuperer et permettre la creation
+              d'un crud sur un format JSON.</span
             >
           </div>
           <br />
           <div class="flex flex-col">
             <span class="text-2xl text-white text-left md:text-center"
-              >Permet a l'utilisateur de consulter le detail d'une facture et de
-              l'avoir en format pdf
+              >Permettre a l'utilisateur de s'inscrire a un seminaire et de
+              pouvoir le consulter.
             </span>
           </div>
         </div>
+        
         <div class="h-16 mt-8 md:mt-10 w-3/5 gap-10 md:flex">
+            
+           
           <h1 class="text-3xl text-white">Technologies</h1>
           <div
             class="gap-4 mt-5 flex flex-wrap justify-start md:justify-start md:mt-0"
@@ -90,58 +94,50 @@ const showPhp = ref(false);
             </div>
             <div class="flex flex-col items-center">
               <img
-                @click="showPhp = !showPhp"
-                class="cursor-pointer w-16 h-10"
-                src="~/assets/img/php.png"
-                alt="php"
+                @click="showJSON = !showJSON"
+                class="cursor-pointer w-10 h-10"
+                src="~/assets/img/json.png"
+                alt="json"
               />
               <Transition>
-                <span v-if="showPhp" class="text-white text-xl mt-2">PHP</span>
+                <span v-if="showJSON" class="text-white text-xl mt-2"
+                  >JSON</span
+                >
               </Transition>
             </div>
             <div class="flex flex-col items-center"></div>
           </div>
         </div>
+      
       </div>
+      
     </div>
   </div>
   <div class="mt-10 md:mt-0 ml-4 mr-4 md:ml-0 md:mr-0">
-    <div id="controls-carousel" class=" w-full relative   flex flex-col justify-center items-center " data-carousel="static">
-      <div class=" h-56 overflow-hidden w-[60rem]  relative rounded-lg md:h-96">
-        <div class="hidden duration-500 " data-carousel-item>
+    <div
+      id="controls-carousel"
+      class="w-full relative flex flex-col justify-center items-center"
+      data-carousel="static"
+    >
+      <div class="h-56 overflow-hidden w-[60rem] relative rounded-lg md:h-96">
+        <div class="hidden duration-500" data-carousel-item>
           <img
-            src="~/assets/img/facture1.png"
-            class="object-center object-cover w-96 md:w-[70rem] absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            src="~/assets/img/seminairejson1.png"
+            class="w-96 md:w-[70rem] absolute block max-w-full mt-10 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="screen-resto1"
           />
         </div>
-        <div
-          class="hidden duration-500 "
-          data-carousel-item="active"
-        >
+        <div class="hidden duration-500" data-carousel-item="active">
           <img
-            src="~/assets/img/facture2.png"
-            class="object-center object-cover w-96 md:w-[70rem] absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            src="~/assets/img/seminairejson3.png"
+            class="w-96 md:w-[70rem] absolute block max-w-full h-auto mt-10 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="screen-resto2"
           />
         </div>
-        <div
-          class="hidden duration-500  "
-          data-carousel-item="static"
-        >
+        <div class="hidden duration-500" data-carousel-item="static">
           <img
-            src="~/assets/img/facture3.png"
-            class="object-center object-cover w-96 md:w-[70rem] absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="screen-resto2"
-          />
-        </div>
-          <div
-          class="hidden duration-500  "
-          data-carousel-item="static"
-        >
-          <img
-            src="~/assets/img/facture4.png"
-            class="object-center object-cover w-96 md:w-[70rem] absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            src="~/assets/img/seminairejson2.png"
+            class="w-96 md:w-[70rem] absolute block max-w-full mt-10 h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="screen-resto2"
           />
         </div>

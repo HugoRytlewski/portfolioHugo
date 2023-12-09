@@ -3,7 +3,6 @@ import NavbarProjet from "../components/Layouts/NavBarProjet.vue";
 import Footer from "../components/Layouts/Footer.vue";
 import { onMounted } from "vue";
 import { initFlowbite } from "flowbite";
-
 // initialize components based on data attribute selectors
 onMounted(() => {
   initFlowbite();
@@ -24,10 +23,12 @@ const ShowCss = ref(false);
           src="~/assets/img/lettre-c.ico "
           alt="collection-logo"
         />
+
         <div
           class="mt-10 md:mt-28 w-3/5 border-b-2 pb-4 border-white md:flex justify-between"
         >
           <h1 class="text-4xl text-white">Collection</h1>
+
           <div class="flex gap-2">
             <a class="text-white text-xl md:text-2xl" href=""
               >Consulter le site
@@ -45,6 +46,15 @@ const ShowCss = ref(false);
               target="_blank"
               >!
             </a>
+          </div>
+          <div class="md:flex">
+            <p class="text-2xl text-white">Doc Dispo :</p>
+            <a
+              class="text-white"
+              href="https://docs.google.com/document/d/18czweIjmIQo6o6bZsCRto4hvwDxhhAtmpgIV2cKXuT0/edit?usp=sharing"
+              target="_blank"
+              ><img class="h-10" src="~/assets/img/doc.png" alt=""
+            /></a>
           </div>
         </div>
         <div class="mt-8 md:mt-10 w-3/5 gap-8 md:flex">
