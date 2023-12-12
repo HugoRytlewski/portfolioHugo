@@ -13,6 +13,7 @@ const showJSON = ref(false);
 </script>
 <template>
   <title>Projet Seminaire JSON</title>
+<div class="w-screen overflow-hidden">
 
   <div class="flex flex-col min-h-screen">
     <NavbarProjet />
@@ -123,7 +124,7 @@ const showJSON = ref(false);
         <div class="hidden duration-500" data-carousel-item>
           <img
             src="~/assets/img/seminairejson1.png"
-            class="w-96 md:w-[70rem] absolute block max-w-full mt-10 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            class="w-full md:w-[70rem] absolute block max-w-full mt-10 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="screen-resto1"
           />
         </div>
@@ -194,6 +195,8 @@ const showJSON = ref(false);
   </div>
 
   <Footer />
+</div>
+
 </template>
 
 <script></script>
