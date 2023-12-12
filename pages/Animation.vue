@@ -117,8 +117,8 @@ const ShowCss = ref(false);
       </div>
     </div>
   </div>
-  <div class="mt-24 xl:mt-10 ml-4 mr-4 md:ml-0 md:mr-0">
-    <div id="controls-carousel" class="mt-10 relative w-full" data-carousel="static">
+  <div class="mt-20  lg:mt-10 ml-4 mr-4 md:ml-0 md:mr-0">
+    <div id="controls-carousel" class=" relative w-full" data-carousel="static">
       <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
         <div class="hidden duration-300 ease-in-out" data-carousel-item>
           <img
