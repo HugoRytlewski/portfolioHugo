@@ -61,7 +61,7 @@ const showJSON = ref(false);
           </div>
         </div>
         
-        <div class="h-16 mt-8 mt-10 w-3/5 gap-10 md:flex">
+        <div class="h-16 mt-8 md:mt-10 w-3/5 gap-10 md:flex">
             
            
           <h1 class="text-3xl text-white">Technologies</h1>
@@ -113,7 +113,7 @@ const showJSON = ref(false);
       
     </div>
   </div>
-  <div class="mt-10 md:mt-0 ml-4 mr-4 md:ml-0 md:mr-0">
+  <div class="mt-10 ml-4 mr-4 md:ml-0 md:mr-0">
     <div
       id="controls-carousel"
       class="w-full relative flex flex-col justify-center items-center"
