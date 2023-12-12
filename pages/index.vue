@@ -11,7 +11,12 @@ body {
 }
 </style>
 <script>
+import { ref } from 'vue';
+
+
+
 export default {
+  
   props: {
     percentageInterval: {
       type: Number,
@@ -20,7 +25,7 @@ export default {
   },
   data() {
     return {
-      delay: 1000,
+      delay: 10000000000000000000000000000,
       countdown: 0,
       countdownInterval: null,
       currentPercentage: 0,
@@ -50,6 +55,7 @@ export default {
           this.stopCountdown();
           this.currentPercentage = 100;
           this.$router.push("/accueil");
+
         }
       }, intervalTime);
     },
@@ -57,6 +63,17 @@ export default {
       clearInterval(this.countdownInterval);
     },
   },
+  setup() {
+    const cursorX = ref(-100); // Initialise hors de l'écran
+    const cursorY = ref(-100); // Initialise hors de l'écran
+
+    const handleMouseMove = (e) => {
+      cursorX.value = e.pageX;
+      cursorY.value = e.pageY;
+    };
+
+    return { cursorX, cursorY, handleMouseMove };
+  }
 };
 </script>
 <template>
@@ -78,10 +95,13 @@ export default {
     <meta property="og:title" content="Hugo Rytlewski Portfolio" />
     <meta property="og:description" content="Portfolio de Hugo Rytlewski." />
   </head>
+  <div id="" class="" @mousemove="handleMouseMove">
+    <div class="blur-cursor" :style="{ left: cursorX + 'px', top: cursorY + 'px' }"></div>
+
   <div
     class="ml-8 mr-8 flex flex-col items-center justify-center min-h-screen gap-16"
   >
-    <div class="w-11/12 sm:w-9/12 md:w-8/12 lg:w-6/12 xl:w-4/12">
+    <div class="z-10 w-11/12 sm:w-9/12 md:w-8/12 lg:w-6/12 xl:w-4/12">
       <div class="flex justify-between mb-1">
         <span class="text-xl md:text-2xl text-white"
           >Chargement Portfolio Hugo...</span
@@ -98,4 +118,20 @@ export default {
       </div>
     </div>
   </div>
+
+
+  </div>
 </template>
+
+<style>
+.blur-cursor {
+  position: absolute;
+  width: 25rem; /* Taille du curseur personnalisé */
+  height: 25rem; /* Taille du curseur personnalisé */
+  background-color: rgb(1, 129, 67); /* Couleur du curseur personnalisé */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  filter: blur(10rem); /* L'effet de flou */
+}
+</style>
