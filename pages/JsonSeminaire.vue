@@ -13,7 +13,7 @@ const showJSON = ref(false);
 </script>
 <template>
   <title>Projet Seminaire JSON</title>
-<div class="w-screen overflow-hidden">
+<div class="w-screen md:w-max overflow-hidden">
 
   <div class="flex flex-col min-h-screen">
     <NavbarProjet />
