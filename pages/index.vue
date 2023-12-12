@@ -25,7 +25,7 @@ export default {
   },
   data() {
     return {
-      delay: 10000000000000000000000000000,
+      delay: 1000,
       countdown: 0,
       countdownInterval: null,
       currentPercentage: 0,
