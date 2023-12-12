@@ -61,7 +61,7 @@ const showJSON = ref(false);
           </div>
         </div>
         
-        <div class="h-16 mt-8 md:mt-10 w-3/5 gap-10 md:flex">
+        <div class="h-16 mt-8 mt-10 w-3/5 gap-10 md:flex">
             
            
           <h1 class="text-3xl text-white">Technologies</h1>
