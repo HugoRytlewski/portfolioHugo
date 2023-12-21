@@ -223,7 +223,18 @@ const Image2 = ref(true);
 </template>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+.image-enter-active,
+.image-leave-active {
+transition: all 0.5s ease;
+}
+
+.image-enter-from,
+.image-leave-to {
+opacity: 0;
+transform: scale(0.5);
+}
 .v-enter-active,
 .v-leave-active {
   transition: all 0.5s ease;
