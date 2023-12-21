@@ -10,6 +10,7 @@ onMounted(() => {
 const showHtml = ref(false);
 const ShowCss = ref(false);
 const showNuxt = ref(false);
+const Image = ref(true);
 </script>
 <template>
   <title>Projet Feed Tracker</title>
@@ -123,8 +124,10 @@ const showNuxt = ref(false);
       <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
         <div class="duration-300 ease-in-out">
           <img
+            v-if="Image"
+            @click="Image = !Image"
             src="~/assets/img/appfeedtrack.png"
-            class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            class="cursor-zoom-in	 absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="screen-collection"
           />
         </div>
@@ -132,6 +135,28 @@ const showNuxt = ref(false);
     </div>
   </div>
   <Footer />
+  <Transition name="image">
+
+<img
+          v-if="!Image"
+          @click="Image = !Image"
+          src="~/assets/img/appfeedtrack.png"
+          class="z-50 cursor-zoom-out object-contain fixed block max-w-full h-[80vh] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          alt="screen-collection"
+        />
+      </Transition>
 </template>
 
-<script></script>
+
+<style>
+.image-enter-active,
+.image-leave-active {
+  transition: all 0.5s ease;
+}
+
+.image-enter-from,
+.image-leave-to {
+  opacity: 0;
+  transform: scale(0.5);
+}
+</style>

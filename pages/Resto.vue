@@ -10,6 +10,9 @@ onMounted(() => {
 const showHtml = ref(false);
 const showPhp = ref(false);
 const ShowCss = ref(false);
+
+const Image = ref(true);
+const Image2 = ref(true);
 </script>
 <template>
   <title>Projet RESTO.FR</title>
@@ -112,8 +115,11 @@ const ShowCss = ref(false);
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img
+              v-if="Image"
+              @click="Image = !Image"
+
               src="~/assets/img/resto.png"
-              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              class="cursor-zoom-in	 absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt="screen-resto1"
             />
           </div>
@@ -122,8 +128,10 @@ const ShowCss = ref(false);
             data-carousel-item="active"
           >
             <img
+              v-if="Image2"
+              @click="Image2 = !Image2"
               src="~/assets/img/test.png"
-              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              class="cursor-zoom-in	 absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt="screen-resto2"
             />
           </div>
@@ -181,10 +189,42 @@ const ShowCss = ref(false);
 
     <Footer />
   </div>
-</template>
+<Transition name="image">
+    
+  <img
+  v-if="!Image"
 
+    @click="Image = !Image"
+    src="~/assets/img/resto.png"
+    class="z-50 cursor-zoom-out object-contain fixed block max-w-full h-[80vh] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+    alt="screen-resto2"
+  />
+</Transition>
+<Transition name="image">
+  
+  <img
+  v-if="!Image2"
+
+    @click="Image2 = !Image2"
+    src="~/assets/img/test.png"
+    class="z-50 cursor-zoom-out object-contain fixed block max-w-full h-[80vh] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+    alt="screen-resto2"
+  />
+</Transition>
+</template>
 <style>
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+.image-enter-active,
+.image-leave-active {
+transition: all 0.5s ease;
+}
+
+.image-enter-from,
+.image-leave-to {
+opacity: 0;
+transform: scale(0.5);
+}
 .v-enter-active,
 .v-leave-active {
   transition: all 0.5s ease;

@@ -11,6 +11,9 @@ onMounted(() => {
 const showHtml = ref(false);
 const ShowCss = ref(false);
 const showNuxt = ref(false);
+
+const Image = ref(true);
+
 </script>
 <template>
   <title>Projet Météo</title>
@@ -125,16 +128,42 @@ const showNuxt = ref(false);
     <div class="relative w-full">
       <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
         <div class="duration-300 ease-in-out">
+          <Transition name="image"> 
+
           <img
+            v-if="Image"
+            @click="Image = !Image"
             src="~/assets/img/appmeteo.png"
-            class="object-contain	absolute block max-w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            class="cursor-pointer object-contain	absolute block max-w-full h-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="screen-collection"
           />
+    
+
+          <img
+            v-else
+            @click="Image = !Image"
+            src="~/assets/img/appmeteo.png"
+            class="cursor-pointer object-contain	fixed block max-w-full h-[80vh] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="screen-collection"
+          />
+        </Transition>
+
         </div>
       </div>
     </div>
   </div>
   <Footer />
 </template>
+<style>
+.image-enter-active,
+.image-leave-active {
+  transition: all 0.5s ease;
+}
 
-<script></script>
+.image-enter-from,
+.image-leave-to {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+</style>

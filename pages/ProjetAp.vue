@@ -11,6 +11,11 @@ onMounted(() => {
 const showHtml = ref(false);
 const ShowCss = ref(false);
 const showPhp = ref(false);
+
+const Image = ref(true);
+const Image2 = ref(true);
+const Image3 = ref(true);
+const Image4 = ref(true);
 </script>
 <template>
   <title>Projet Ap Congrès</title>
@@ -29,7 +34,7 @@ const showPhp = ref(false);
           class="mt-10 md:mt-28 w-3/5 border-b-2 pb-4 border-white md:flex justify-between"
         >
           <h1 class="text-4xl text-white">Ap Congrès</h1>
-          <div class="  md:flex">
+          <div class="  flex">
             <p class="text-2xl  text-white">Doc Dispo :</p>
             <a class="text-white" href="https://docs.google.com/document/d/1R93OHfE6UrLr69pC7nmPPV3zC_ZH9bv47zvsvBi-J2o/edit?usp=sharing" target="_blank"><img class="h-10 " src="~/assets/img/doc.png" alt=""></a>
 
@@ -105,11 +110,13 @@ const showPhp = ref(false);
       </div>
     </div>
   </div>
-  <div class="mt-10 md:mt-0 ml-4 mr-4 md:ml-0 md:mr-0">
-    <div id="controls-carousel" class=" w-full relative   flex flex-col justify-center items-center " data-carousel="static">
+  <div class="mt-20 md:mt-0 ml-4 mr-4 md:ml-0 md:mr-0">
+    <div id="controls-carousel" class=" w-full relative  overflow-hidden flex flex-col justify-center items-center " data-carousel="static">
       <div class=" h-56 overflow-hidden w-[60rem]  relative rounded-lg md:h-96">
         <div class="hidden duration-500 " data-carousel-item>
           <img
+            v-if="Image"
+            @click="Image = !Image"
             src="~/assets/img/facture1.png"
             class="object-center object-cover w-96 md:w-[70rem] absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="screen-resto1"
@@ -120,8 +127,10 @@ const showPhp = ref(false);
           data-carousel-item="active"
         >
           <img
+            v-if="Image2"
+            @click="Image2 = !Image2"
             src="~/assets/img/facture2.png"
-            class="object-center object-cover w-96 md:w-[70rem] absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            class="cursor-zoom-in	 object-center object-cover w-96 md:w-[70rem] absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="screen-resto2"
           />
         </div>
@@ -130,8 +139,10 @@ const showPhp = ref(false);
           data-carousel-item="static"
         >
           <img
+            v-if="Image3"
+            @click="Image3 = !Image3"
             src="~/assets/img/facture3.png"
-            class="object-center object-cover w-96 md:w-[70rem] absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            class="cursor-zoom-in	 object-center object-cover w-96 md:w-[70rem] absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="screen-resto2"
           />
         </div>
@@ -140,8 +151,10 @@ const showPhp = ref(false);
           data-carousel-item="static"
         >
           <img
+            v-if="Image4"
+            @click="Image4 = !Image4"
             src="~/assets/img/facture4.png"
-            class="object-center object-cover w-96 md:w-[70rem] absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            class="cursor-zoom-in	 object-center object-cover w-96 md:w-[70rem] absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="screen-resto2"
           />
         </div>
@@ -198,6 +211,60 @@ const showPhp = ref(false);
   </div>
 
   <Footer />
-</template>
+  <Transition name="image">
+    
+    <img
+    v-if="!Image"
 
-<script></script>
+      @click="Image = !Image"
+      src="~/assets/img/facture1.png"
+      class="z-50 cursor-zoom-out object-contain fixed block max-w-full h-[80vh] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+      alt="screen-resto2"
+    />
+</Transition>
+  <Transition name="image">
+    
+    <img
+    v-if="!Image2"
+
+      @click="Image2 = !Image2"
+      src="~/assets/img/facture2.png"
+      class="z-50 cursor-zoom-out object-contain fixed block max-w-full h-[80vh] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+      alt="screen-resto2"
+    />
+</Transition>
+  <Transition name="image">
+    
+    <img
+    v-if="!Image3"
+
+      @click="Image3 = !Image3"
+      src="~/assets/img/facture3.png"
+      class="z-50 cursor-zoom-out object-contain fixed block max-w-full h-[80vh] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+      alt="screen-resto2"
+    />
+</Transition>
+  <Transition name="image">
+    
+    <img
+    v-if="!Image4"
+
+      @click="Image4 = !Image4"
+            src="~/assets/img/facture4.png"
+      class="z-50 cursor-zoom-out object-contain fixed block max-w-full h-[80vh] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+      alt="screen-resto2"
+    />
+</Transition>
+</template>
+<style>
+.image-enter-active,
+.image-leave-active {
+transition: all 0.5s ease;
+}
+
+.image-enter-from,
+.image-leave-to {
+opacity: 0;
+transform: scale(0.5);
+}
+</style>

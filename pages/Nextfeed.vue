@@ -12,6 +12,9 @@ const showHtml = ref(false);
 const showNuxt = ref(false);
 const ShowCss = ref(false);
 const ShowSymfony = ref(false);
+
+const Image = ref(true);
+const Image2 = ref(true);
 </script>
 
 <template>
@@ -123,6 +126,8 @@ const ShowSymfony = ref(false);
       <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img
+            v-if="Image"
+            @click="Image = !Image"
             src="~/assets/img/nextfeed.png"
             class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="screen-nextfeed1"
@@ -133,6 +138,8 @@ const ShowSymfony = ref(false);
           data-carousel-item="active"
         >
           <img
+            v-if="Image2"
+            @click="Image2 = !Image2"
             src="~/assets/img/nextfeed2.png"
             class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="screen-nextfeed2"
@@ -190,6 +197,29 @@ const ShowSymfony = ref(false);
     </div>
   </div>
   <Footer />
+  <Transition name="image">
+    
+    <img
+    v-if="!Image"
+
+      @click="Image = !Image"
+      src="~/assets/img/nextfeed.png"
+      class="z-50 cursor-zoom-out object-contain fixed block max-w-full h-[80vh] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+      alt="screen-resto2"
+    />
+</Transition>
+<Transition name="image">
+    
+    <img
+    v-if="!Image2"
+
+      @click="Image2 = !Image2"
+      src="~/assets/img/nextfeed2.png"
+      class="z-50 cursor-zoom-out object-contain fixed block max-w-full h-[80vh] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+      alt="screen-resto2"
+    />
+</Transition>
+
 </template>
 
 <style>
