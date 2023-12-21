@@ -216,7 +216,6 @@ const Image2 = ref(true);
       alt="screen-collection"
     />
   </Transition>
-
 </template>
 
 <style>

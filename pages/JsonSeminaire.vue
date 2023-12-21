@@ -237,6 +237,7 @@ const Image3 = ref(true);
       />
   </Transition>
 </template>
+
 <style>
   @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
