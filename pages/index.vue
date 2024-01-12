@@ -124,6 +124,8 @@ export default {
 </template>
 
 <style>
+
+
 .blur-cursor {
   position: absolute;
   width: 25rem; /* Taille du curseur personnalisé */
@@ -133,5 +135,17 @@ export default {
   transform: translate(-50%, -50%);
   pointer-events: none;
   filter: blur(10rem); /* L'effet de flou */
+
+  /* Additional styles for smaller screens */
+  @media (max-width: 768px) {
+    width: 0rem; /* Adjust the size for smaller screens */
+    height: 0rem; /* Adjust the size for smaller screens */
+    filter: none; /* Remove blur effect for smaller screens */
+
+  }
 }
+
+
+
+
 </style>

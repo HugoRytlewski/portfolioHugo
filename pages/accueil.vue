@@ -58,6 +58,13 @@ let Animation = {
   image: "https://i.imgur.com/wqOZMGR.png",
   lien: "/Animation",
 };
+let EcoQuest = {
+  name: "EcoQuest",
+  name2: " (Nuit info)",
+  description: "Projets réaliser lors de la nuit de l'info",
+  image: "https://i.imgur.com/wWx9aYr.png",
+  lien: "/nuitDeLinfo",
+};
 
 let AP = {
   name: "Congres",
@@ -77,7 +84,7 @@ let SeminaireJSon = {
 
 
 let tab = ref();
-tab.value = ref({ Resto , Feed, Meteo, AP});
+tab.value = ref({ Resto , Feed, EcoQuest, AP});
 
 function sortProjectByCat(Indice) {
   if (Indice == "PERSO") {
@@ -98,7 +105,7 @@ function sortProjectByCat(Indice) {
     Perso.value = false;
     Pro.value = false;
     Mix.value = true;
-    tab.value = ref({ Resto , Feed, Meteo, AP});
+    tab.value = ref({ Resto , Feed, EcoQuest, AP});
   } 
 }
 
