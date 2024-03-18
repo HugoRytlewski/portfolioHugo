@@ -28,6 +28,14 @@ let Resto = {
   lien: "/Resto",
 };
 
+let Bento = {
+  name: "Youtube",
+  name2: "(Bento)",
+  description: "Site de design youtube",
+  image: "Youtube_logo.png",
+  lien: "/bento",
+};
+
 let Nextfeed = {
   name: "Nextfeed ",
   name2: " (Stage)",
@@ -84,7 +92,7 @@ let SeminaireJSon = {
 
 
 let tab = ref();
-tab.value = ref({ Resto , Feed, EcoQuest, AP});
+tab.value = ref({ Resto , Feed, EcoQuest, Bento});
 
 function sortProjectByCat(Indice) {
   if (Indice == "PERSO") {
@@ -300,7 +308,7 @@ onMounted(() => {
       <div class="p-4">
         <nuxt-link :to="projet.lien">
           <div
-            class="flex rounded-lg h-full p-20 bg-white flex-col ease-in duration-200 md:hover:-translate-y-1 md:hover:scale-105 hover:ring-4 ring-green-400 md:p-28"
+            class="flex rounded-lg h-[21em] p-20 bg-white flex-col ease-in duration-200 md:hover:-translate-y-1 md:hover:scale-105 hover:ring-4 ring-green-400 md:p-28"
           >
             <div class="flex flex-col justify-between flex-grow">
               <img class="w-20 h-15" :src="projet.image" :alt="projet.name" />
