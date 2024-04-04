@@ -34,16 +34,19 @@ const Image2 = ref(true);
         class="mt-10 md:mt-28 w-3/5 border-b-2 pb-4 border-white md:flex justify-between"
       >
         <h1 class="text-4xl text-blue-500">NextEvent</h1>
+        <div class="flex  flex-col md:flex-row gap-6">
+          <div class="  flex">
+            <p class="text-2xl  text-white">Doc Front-end </p>
+            <a class="text-white" href="https://github.com/HugoRytlewski/docPortfolio/blob/main/doc%20NextEvents/front.md" target="_blank"><img class="h-10 " src="~/assets/img/doc.png" alt=""></a>
+  
+        </div>
         <div class="  flex">
-          <p class="text-2xl  text-white">Doc Front-end Dispo :</p>
-          <a class="text-white" href="https://github.com/HugoRytlewski/docPortfolio/blob/main/doc%20NextEvents/front.md" target="_blank"><img class="h-10 " src="~/assets/img/doc.png" alt=""></a>
-
+          <p class="text-2xl  text-white">Doc Back-end</p>
+          <a class="text-white" href="https://github.com/HugoRytlewski/docPortfolio/blob/main/doc%20NextEvents/back.md" target="_blank"><img class="h-10 " src="~/assets/img/doc.png" alt=""></a>
+  
       </div>
-      <div class="  flex">
-        <p class="text-2xl  text-white">Doc Back-end Dispo :</p>
-        <a class="text-white" href="https://github.com/HugoRytlewski/docPortfolio/blob/main/doc%20NextEvents/back.md" target="_blank"><img class="h-10 " src="~/assets/img/doc.png" alt=""></a>
-
-    </div>
+        </div>
+        
       </div>
         <div class="mt-8 md:mt-10 w-3/5 gap-8 md:flex">
           <h1 class="text-3xl text-blue-500">Résumé</h1>
@@ -128,7 +131,7 @@ const Image2 = ref(true);
     </div>
   </div>
   <div></div>
-  
+  <div class="h-20 md:h-0"></div>
     
   <Footer />
   <Transition name="image">
