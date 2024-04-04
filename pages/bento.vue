@@ -22,7 +22,7 @@
           <div class="mt-28 flex flex-col justify-center items-center">
             <img
               class="w-2/5 h-3/6 rounded-xl md:w-auto"
-              src="Youtube_logo.ico "
+              src="~/assets/img/Youtube_logo.ico "
               alt="youtube-logo"
             />
             <div
