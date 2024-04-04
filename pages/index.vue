@@ -56,7 +56,7 @@ let Meteo = {
   name: "Météo",
   name2: " (API)",
   description: "Application météo",
-  image: "https://hugorytlewski.com/_nuxt/meteo.84d10e74.ico",
+  image: "meteo.ico",
   lien: "/Meteo",
 };
 
