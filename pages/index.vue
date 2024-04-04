@@ -40,7 +40,7 @@ let Nextfeed = {
   name: "Nextfeed ",
   name2: " (Stage)",
   description: "Site de veille technologique",
-  image: "https://hugorytlewski.com/_nuxt/icon-nexton.ab19e0a7.png",
+  image: "icon-nexton.png",
   lien: "/Nextfeed",
 };
 
@@ -48,7 +48,7 @@ let NextEvent = {
   name: "NextEvent ",
   name2: " (Stage)",
   description: "Site de gestion d'evenement",
-  image: "https://hugorytlewski.com/_nuxt/icon-nexton.ab19e0a7.png",
+  image: "icon-nexton.png",
   lien: "/NextEvent",
 };
 
