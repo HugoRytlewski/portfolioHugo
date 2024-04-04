@@ -8,6 +8,8 @@ const Text2 = ref(true);
 const Mix = ref(true);
 const Perso = ref(false);
 const Pro = ref(false);
+const Stage = ref(false);
+
 
 
 import "assets/css/main.css";
@@ -107,6 +109,7 @@ function sortProjectByCat(Indice) {
     Perso.value = true;
     Pro.value = false;
     Mix.value = false;
+    Stage.value = false;
   
 
     tab.value = ref({ Feed , Meteo , Animation,Bento });
@@ -114,15 +117,26 @@ function sortProjectByCat(Indice) {
     Perso.value = false;
     Pro.value = true;
     Mix.value = false;
+    Stage.value = false;
  
 
-    tab.value = ref({ Resto , Nextfeed, AP , SeminaireJSon, NextEvent});
+    tab.value = ref({ Resto , AP , SeminaireJSon});
   } else if (Indice == "MIX") {
     Perso.value = false;
     Pro.value = false;
     Mix.value = true;
+    Stage.value = false;
+
     tab.value = ref({ Resto , Feed, EcoQuest, AP});
   } 
+  else if (Indice == "STAGE") {
+    Perso.value = false;
+    Pro.value = false;
+    Mix.value = false;
+    Stage.value = true;
+
+    tab.value = ref({ Nextfeed, NextEvent });
+  }
 }
 
 const textLines = [
@@ -307,6 +321,17 @@ onMounted(() => {
         ECOLE
       </p>
     </div>
+    <div
+    class="bg-neutral-800 text-white rounded-full w-14 text-center border-neutral-800 border hover:border-white duration-300 cursor-pointer"
+  >
+    <p
+      class="select-none"
+      :class="{ 'bg-white rounded-full text-black': Stage }"
+      @click="sortProjectByCat('STAGE')"
+    >
+      STAGE
+    </p>
+  </div>
    
   </div>
   <div
