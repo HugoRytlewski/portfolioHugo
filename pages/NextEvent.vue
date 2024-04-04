@@ -35,10 +35,15 @@ const Image2 = ref(true);
       >
         <h1 class="text-4xl text-blue-500">NextEvent</h1>
         <div class="  flex">
-          <p class="text-2xl  text-white">Doc Dispo :</p>
-          <a class="text-white" href="https://docs.google.com/document/d/1R93OHfE6UrLr69pC7nmPPV3zC_ZH9bv47zvsvBi-J2o/edit?usp=sharing" target="_blank"><img class="h-10 " src="~/assets/img/doc.png" alt=""></a>
+          <p class="text-2xl  text-white">Doc Front-end Dispo :</p>
+          <a class="text-white" href="https://github.com/HugoRytlewski/docPortfolio/blob/main/doc%20NextEvents/front.md" target="_blank"><img class="h-10 " src="~/assets/img/doc.png" alt=""></a>
 
       </div>
+      <div class="  flex">
+        <p class="text-2xl  text-white">Doc Back-end Dispo :</p>
+        <a class="text-white" href="https://github.com/HugoRytlewski/docPortfolio/blob/main/doc%20NextEvents/back.md" target="_blank"><img class="h-10 " src="~/assets/img/doc.png" alt=""></a>
+
+    </div>
       </div>
         <div class="mt-8 md:mt-10 w-3/5 gap-8 md:flex">
           <h1 class="text-3xl text-blue-500">Résumé</h1>
