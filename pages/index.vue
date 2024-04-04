@@ -24,7 +24,7 @@ let Resto = {
   name: "Resto.fr",
   name2: " (BLOC2)",
   description: "Site de restauration",
-  image: "https://hugorytlewski.com/_nuxt/logo.242898cb.png",
+  image: "logo.png",
   lien: "/Resto",
 };
 
@@ -64,7 +64,7 @@ let Feed = {
   name: "Feed",
   name2: " (RSS)",
   description: "Outil de veille technologique",
-  image: "https://hugorytlewski.com/_nuxt/lettre-f.d6cc9c97.ico",
+  image: "lettre-f.ico",
   lien: "/Feed",
 };
 let Animation = {
