@@ -30,9 +30,17 @@ const Image2 = ref(true);
           src="~/assets/img/icon-nexton.png"
           alt="nexton"
         />
-        <div class="mt-10 md:mt-28 w-3/5 border-b-2 pb-4 border-white">
-          <h1 class="text-4xl text-blue-500">NEXTFEED</h1>
-        </div>
+        <div
+        class="mt-10 md:mt-28 w-3/5 border-b-2 pb-4 border-white md:flex justify-between"
+      >
+        <h1 class="text-4xl text-blue-500">NextEvent</h1>
+        <div class="  flex">
+          <p class="text-2xl  text-white">Doc dispo :</p>
+          <a class="text-white" href="https://github.com/HugoRytlewski/docPortfolio/tree/main/doc%20NextFeed" target="_blank"><img class="h-10 " src="~/assets/img/doc.png" alt=""></a>
+
+      </div>
+      
+      </div>
         <div class="mt-8 md:mt-10 w-3/5 gap-8 md:flex">
           <h1 class="text-3xl text-blue-500">Résumé</h1>
           <div>
