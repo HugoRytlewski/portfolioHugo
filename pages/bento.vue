@@ -14,15 +14,15 @@
     </script>
     <template>
       <title>Projet Youtube Bento</title>
-    
+
       <div class="flex flex-col min-h-screen">
         <NavbarProjet />
-    
+
         <div class="flex-grow">
           <div class="mt-28 flex flex-col justify-center items-center">
             <img
               class="w-2/5 h-3/6 rounded-xl md:w-auto"
-              src="~/assets/img/Youtube_logo.ico "
+              src="~/assets/img/youtube_logo.ico "
               alt="youtube-logo"
             />
             <div
@@ -31,7 +31,7 @@
               <h1 class="text-4xl text-red-500">Youtube Bento</h1>
               <div class="flex gap-2">
                 <a class="text-white text-xl md:text-2xl">Consulter le site </a>
-    
+
                 <a
                   class="text-white text-xl md:text-2xl underline underline-offset-8"
                   href="https://youtubebento.vercel.app"
@@ -73,7 +73,7 @@
               <div
                 class="gap-4 mt-5 flex flex-wrap justify-start md:justify-start md:mt-0"
               >
-           
+
                 <div class="flex flex-col items-center">
                   <img
                     @click="showHtml = !showHtml"
@@ -117,10 +117,10 @@
         </div>
       </div>
       <div></div>
-      
+
     </template>
-    
-    
+
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
     

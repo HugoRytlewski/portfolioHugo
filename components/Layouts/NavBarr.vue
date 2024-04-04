@@ -1,7 +1,7 @@
 <template>
   <ul class="fixed w-screen block flex justify-between   text-white z-50 text text-lg top-0 item-center drop-shadown-md p-7">
     <li>
-      <NuxtLink to="/accueil#propos">
+      <NuxtLink to="/#propos">
         <button class="flex items-center justify-center ml-4 ">
           <h2 class="sm:block teest text-2xl">
             Hugo Rytlewski

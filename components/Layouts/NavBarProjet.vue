@@ -1,7 +1,7 @@
 <template>
   <ul class="fixed w-screen block  flex test justify-between  max-h-24  text-white z-40 text text-lg top-0 item-center drop-shadown-md p-7">
     <li>
-      <NuxtLink to="/accueil#projets">
+      <NuxtLink to="/#projets">
 
         <button class="flex items-center justify-center ml-4 ">
           <svg
