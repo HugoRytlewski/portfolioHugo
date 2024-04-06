@@ -473,7 +473,7 @@ onMounted(() => {
               <input
                 type="hidden"
                 name="_next"
-                value="https://hugorytlewski.com/index#contact"
+                value="https://hugorytlewski.com/#contact"
               />
               <label for="email" class="block mb-2 text-2xl text-white"
                 >Mail</label
