@@ -38,6 +38,14 @@ let Bento = {
   lien: "/bento",
 };
 
+let Portfolio = {
+  name: "Portfolio V2",
+  name2: "(En cours)",
+  description: "Portfolio en cours de réalisation",
+  image: "lettre-f.ico",
+  lien: "/portfolio",
+};
+
 let Nextfeed = {
   name: "Nextfeed ",
   name2: " (Stage)",
@@ -102,7 +110,7 @@ let SeminaireJSon = {
 
 
 let tab = ref();
-tab.value = ref({ Resto , Feed, EcoQuest, AP});
+tab.value = ref({ Resto , Feed, EcoQuest, Portfolio});
 
 function sortProjectByCat(Indice) {
   if (Indice == "PERSO") {
@@ -112,7 +120,7 @@ function sortProjectByCat(Indice) {
     Stage.value = false;
   
 
-    tab.value = ref({ Feed , Meteo , Animation,Bento });
+    tab.value = ref({ Feed , Meteo , Animation,Bento,Portfolio });
   } else if (Indice == "ECOLE") {
     Perso.value = false;
     Pro.value = true;
@@ -127,7 +135,7 @@ function sortProjectByCat(Indice) {
     Mix.value = true;
     Stage.value = false;
 
-    tab.value = ref({ Resto , Feed, EcoQuest, AP});
+    tab.value = ref({ Resto , Feed, EcoQuest, Portfolio});
   } 
   else if (Indice == "STAGE") {
     Perso.value = false;
